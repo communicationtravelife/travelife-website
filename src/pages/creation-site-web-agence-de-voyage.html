@@ -1,0 +1,359 @@
+<!--META {"path": "creation-site-web-agence-de-voyage/", "nav": "tarifs", "dark": true, "title": "Tarifs Création Site Web Agence de Voyage B2C | Travelife", "desc": "Découvrez nos tarifs Création Site Web Agence de Voyage de votre agence de voyage. CMS complet, modules de réservation et intégration API.", "canonical": "https://travelife.ma/creation-site-web-agence-de-voyage/", "og": "https://travelife.ma/wp-content/uploads/2026/05/travelive-website-1024x1024.webp", "crumbs": [["Tarifs site web", "/creation-site-web-agence-de-voyage/"]]} -->
+<style>
+/* --- Pages tarifs (partagé) : styles locaux --- */
+.px-hero{padding-bottom:210px}
+.px-head{margin:96px auto 0}
+@media (max-width:640px){.px-head{margin-top:56px}}
+.px-head h2{font-size:clamp(1.8rem,3.2vw,2.6rem);color:#fff}
+.plan.plan--featured .price{color:#fff}
+.sub-mock b{color:var(--ink)}
+.sub-mock .sub-plan b{color:#fff}
+.section--sand .faq-tabs{background:var(--sand-2)}
+.px-hero .split{align-items:center}
+.px-pull{position:relative;z-index:2;margin-top:-150px;padding-top:0}
+.px-pull .pricing{align-items:stretch}
+.plan .plan-ico{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:var(--violet-50);color:var(--violet);margin-bottom:18px}
+.plan .plan-ico svg{width:21px;height:21px}
+.plan--featured .plan-ico{background:rgba(255,122,47,.16);color:var(--orange-2)}
+.plan .incl{font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--violet);margin:0 0 4px}
+.plan--featured .incl{color:var(--orange-2)}
+.plan .setup{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:.88rem;background:var(--sand);border-radius:12px;padding:10px 14px;margin:0 0 22px;color:var(--ink)}
+.plan .setup b{font-family:var(--f-display);font-size:1rem}
+.plan--featured .setup{background:rgba(255,255,255,.06);color:#fff}
+.plan .price-note{margin-bottom:16px;padding-bottom:0;border-bottom:0}
+.plan .checklist{border-top:1px solid var(--line);padding-top:12px}
+.plan--featured .checklist{border-color:rgba(255,255,255,.1)}
+.px-assure{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.px-assure div{display:flex;gap:14px;align-items:flex-start;font-size:.95rem;color:var(--muted)}
+.px-assure b{display:block;color:var(--ink);font-family:var(--f-display);font-weight:600;font-size:1.02rem}
+.px-assure .ico{flex:none;margin:0;width:44px;height:44px}
+.sub-mock .app-main{gap:12px;padding:22px}
+.sub-plan{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--ink);color:#B9B4D9;border-radius:14px;padding:16px 18px}
+.sub-plan b{display:block;color:#fff;font-family:var(--f-display);font-size:1.05rem}
+.sub-plan small{font-size:.72rem}
+.sub-plan .amt{text-align:right;color:#fff;font-family:var(--f-display);font-size:1.6rem;font-weight:700;letter-spacing:-.03em;line-height:1}
+.sub-plan .amt small{display:block;font-family:var(--f-body);font-size:.66rem;font-weight:500;color:#A9A4CC;letter-spacing:0;margin-top:4px}
+.sub-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-top:1px solid var(--line);font-size:.78rem}
+.sub-row:first-of-type{border-top:0}
+.sub-row span{display:flex;align-items:center;gap:8px;color:var(--text)}
+.sub-row span svg{width:14px;height:14px;color:var(--violet)}
+.sub-bar{height:7px;border-radius:9px;background:var(--violet-50);overflow:hidden;margin-top:6px}
+.sub-bar i{display:block;height:100%;width:70%;border-radius:9px;background:linear-gradient(90deg,var(--violet-2),var(--violet))}
+.cfg{display:grid;grid-template-columns:.9fr 1.1fr;align-items:stretch;background:#fff;border:1px solid var(--sand-2);border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh-2)}
+.cfg .ph{position:relative;min-height:300px}
+.cfg .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cfg .tx{padding:56px}
+.cfg h2{font-size:clamp(1.7rem,2.8vw,2.3rem)}
+/* Tableau comparatif */
+.cmp{position:relative;overflow-x:auto;border:1px solid var(--line);border-radius:var(--r-lg);background:#fff;box-shadow:var(--sh-2);-webkit-overflow-scrolling:touch}
+.cmp table{min-width:760px;font-size:.95rem}
+.cmp th,.cmp td{border-bottom:1px solid var(--line);padding:15px 22px;vertical-align:middle}
+.cmp thead th{background:#fff;padding:28px 22px 22px;vertical-align:bottom;text-align:center}
+.cmp thead th:first-child{text-align:left;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-family:var(--f-body);font-weight:600}
+.cmp thead b{display:block;font-size:1.15rem;color:var(--ink);letter-spacing:-.02em}
+.cmp thead small{display:block;font-family:var(--f-body);font-weight:500;font-size:.85rem;color:var(--muted);margin-top:2px}
+.cmp thead .chip{margin-bottom:10px}
+.cmp th:first-child,.cmp td:first-child{width:37%;position:sticky;left:0;z-index:1;background:#fff}
+.cmp td{text-align:center;color:var(--ink)}
+.cmp td:first-child{text-align:left;font-weight:500;color:var(--text)}
+.cmp .hl{background:#F7F5FF}
+.cmp thead th.hl{background:var(--ink);border-bottom-color:var(--ink)}
+.cmp thead th.hl b{color:#fff}.cmp thead th.hl small{color:#A9A4CC}
+.cmp tr.grp th{background:var(--sand);font-family:var(--f-body);font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8A6B4A;padding:11px 22px;text-align:left}
+.cmp tr.grp th span{position:sticky;left:22px}
+.cmp tbody tr:hover td{background:#FCFBFF}
+.cmp tbody tr:hover td.hl{background:#F1EDFF}
+.cmp .y{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#E7F8EF;color:var(--ok);vertical-align:middle}
+.cmp .y svg{width:14px;height:14px;stroke-width:3}
+.cmp .n{display:inline-block;width:14px;height:2px;border-radius:2px;background:#D6D0E6;vertical-align:middle}
+.cmp .val{font-family:var(--f-display);font-weight:600;font-size:1.02rem}
+.cmp tfoot td{border-bottom:0;padding:22px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.cmp-hint{display:none;font-size:.82rem;color:var(--muted);margin:0 0 12px;align-items:center;gap:8px}
+.cmp-hint svg{width:15px;height:15px}
+.join .inner{max-width:620px}
+.join .stats{grid-template-columns:1fr 1fr;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.18);backdrop-filter:blur(8px);margin:28px 0 8px;max-width:420px}
+.join .stat{padding:20px 24px;border-color:rgba(255,255,255,.18)}
+.join .stat b{color:#fff;font-size:2.3rem}
+.join .stat span{color:#E6E2FA}
+@media (max-width:1080px){.cfg .tx{padding:44px}}
+@media (max-width:960px){
+ .px-pull .pricing{grid-template-columns:1fr;max-width:560px;margin:0 auto}
+ .px-hero{padding-bottom:180px}
+ .px-hero .hero-visual{display:none}
+ .px-assure{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto}
+ .cfg{grid-template-columns:1fr}
+ .cfg .ph{min-height:240px}
+}
+@media (max-width:640px){
+ .cfg .tx{padding:30px 24px}
+ .cmp table{min-width:620px;font-size:.88rem}
+ .cmp th:first-child,.cmp td:first-child{width:auto;min-width:170px;max-width:190px;padding-left:16px;padding-right:12px}
+ .cmp th,.cmp td{padding:13px 12px}
+ .cmp thead th{padding:22px 12px 18px}
+ .cmp-hint{display:flex}
+ .plan .price{font-size:2.6rem}
+ .cmp th:first-child,.cmp td:first-child{min-width:130px;max-width:140px;font-size:.84rem}
+ .cmp td{font-size:.84rem}
+}
+</style>
+<style>
+.web-hero h2.sub{color:#fff;font-size:clamp(1.25rem,2vw,1.6rem);font-weight:500;letter-spacing:-.01em;line-height:1.3;margin-bottom:16px}
+.web-hero .hero-visual .mock{box-shadow:var(--glow)}
+.plan .desc small{display:block;font-size:.85rem;margin-top:2px}
+.addon{border:1.5px dashed #FFC29C;background:var(--orange-50);border-radius:14px;padding:14px 16px;margin:0 0 20px;font-size:.88rem;color:#6B4A33;line-height:1.5}
+.addon .chip{margin-bottom:8px}
+.addon b{display:block;color:var(--ink);font-family:var(--f-display);font-size:1rem}
+.plan .price--quote{font-size:2.5rem}
+.usp .tile{min-height:0}
+.usp .tile--sand h3{color:var(--ink)}
+.usp .tile-visual .bk{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-top:8px}
+.usp .yield{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center}
+.yield-chips{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.yield-chips div{background:#fff;border:1px solid var(--sand-2);border-radius:14px;padding:14px 16px;font-size:.8rem;color:var(--muted)}
+.yield-chips b{display:block;font-family:var(--f-display);font-size:1.15rem;color:var(--ink)}
+.yield-chips .o b{color:var(--orange)}
+.pillars .step{padding:34px}
+.pillars .step h3{font-size:1.25rem;margin-bottom:18px}
+.pillars .step h4{font-size:.98rem;margin:18px 0 4px;display:flex;align-items:center;gap:8px}
+.pillars .step h4::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--orange);flex:none}
+.pillars .step p{font-size:.93rem;margin:0}
+.pillars .step .chip{margin-left:10px;vertical-align:middle}
+@media (max-width:960px){.usp .yield{grid-template-columns:1fr;gap:24px}.pillars{grid-template-columns:1fr!important;max-width:620px;margin:0 auto}}
+</style>
+
+<section class="page-hero page-hero--dark px-hero web-hero">
+ <div class="container">
+  <ol class="breadcrumb"><li><a href="/">Accueil</a></li><li>Tarif Site Web – Des offres adaptées à vos besoins digitaux</li></ol>
+  <div class="split split--wide-text">
+   <div>
+    <span class="eyebrow">Tarifs site web B2C</span>
+    <h1>Tarifs Travelife&nbsp;: site web agence de voyage <span class="serif grad-text">B2C</span></h1>
+    <h2 class="sub">Site web agence de voyage&nbsp;: créez une expérience de réservation inégalée</h2>
+    <p class="lead">Des tarifs transparents et des modules évolutifs pour la création de votre site web d’agence de voyage et la digitalisation de votre catalogue.</p>
+    <div class="btn-row"><a class="btn btn--primary" href="/formulaire-site-internet-agences-de-voyages/">Demander une démo {{i:arrow}}</a><a class="btn btn--ghost" href="https://starter.b2c.travelife.io/public/fr" target="_blank" rel="noopener">{{i:globe}} Consulter le site démo</a></div>
+    <div class="trust-row" style="justify-content:flex-start"><span>{{i:check}} 100&nbsp;% création B2C</span><span>{{i:check}} Zéro frais masqués</span><span>{{i:check}} Aucune commission sur vos ventes</span></div>
+   </div>
+   <div class="hero-visual">
+    {{inc:mock-site}}
+    <div class="chip-float" style="left:-36px;bottom:-48px"><span class="ico ico--ok">{{i:check}}</span><span><b>Réservation confirmée</b>Paiement en ligne sécurisé</span></div>
+    <div class="chip-float" style="right:-26px;top:96px"><span class="ico ico--o">{{i:plug}}</span><span><b>2 API incluses</b>1 flux Hôtel · 1 flux Vol</span></div>
+   </div>
+  </div>
+  <div class="section-head px-head" id="plans">
+   <span class="eyebrow">Nos formules</span>
+   <h2>Une offre pour chaque profil d’agence</h2>
+   <p style="color:#A9A4CC">De la production locale au hub API mondial, choisissez le plan qui accompagne votre croissance.</p>
+  </div>
+ </div>
+</section>
+
+<section class="section px-pull">
+ <div class="container">
+  <div class="pricing">
+   <div class="plan reveal">
+    <span class="plan-ico">{{i:building}}</span>
+    <h3>Travelife Starter</h3>
+    <p class="desc">Pour agences locales &amp; réceptifs<small>(Production propre – Pas d’API externe)</small></p>
+    <div class="price">99&nbsp;€ <small>/ mois</small></div>
+    <p class="price-note">Sans API externe</p>
+    <p class="setup"><span>Configuration</span><b>500&nbsp;€</b></p>
+    <div class="addon"><span class="chip chip--o">Fortement recommandé</span><b>Pack Lancement Clé en main</b>Intégration de vos 10 premiers circuits phares (+&nbsp;300&nbsp;€)</div>
+    <p class="incl">Inclusions &amp; configuration</p>
+    <ul class="checklist"><li>Configuration du domaine, intégration du logo et charte graphique de base</li><li>2 heures de formation en ligne</li><li>CMS complet</li><li>Contrats hôtels directs</li><li>Tours &amp; activités</li><li>Formulaires &amp; blog</li></ul>
+    <a class="btn btn--ghost" href="/formulaire-site-internet-agences-de-voyages/">Demander une démo</a>
+   </div>
+   <div class="plan plan--featured reveal reveal-d1">
+    <span class="badge">Le cœur de cible</span>
+    <span class="plan-ico">{{i:plane}}</span>
+    <h3>Travelife Advanced</h3>
+    <p class="desc">Cœur de cible – Agence Outbound / OTA<small>(Idéal pour booster vos ventes avec API)</small></p>
+    <div class="price">399&nbsp;€ <small>/ mois</small></div>
+    <p class="price-note">2 API incluses</p>
+    <p class="setup"><span>Configuration</span><b>1&nbsp;500&nbsp;€</b></p>
+    <p class="incl">Tout du plan Starter +</p>
+    <ul class="checklist"><li><b>Déploiement technique complet</b> : mapping et tests complets des 2 flux API (Hôtel + Vol)</li><li><b>Accompagnement &amp; pricing</b> : paramétrage initial personnalisé de vos règles de tarification</li><li>Formation initiale (pack 6 à 8&nbsp;h)</li><li>Module Packages</li><li><b>Multi-connectivité : 2 API incluses</b> – 1 flux Hôtel, 1 flux Vol (hors frais de credentials fournisseurs)</li></ul>
+    <a class="btn btn--primary" href="/formulaire-site-internet-agences-de-voyages/">Demander une démo {{i:arrow}}</a>
+   </div>
+   <div class="plan reveal reveal-d2">
+    <span class="plan-ico">{{i:network}}</span>
+    <h3>Premium / Enterprise</h3>
+    <p class="desc">Accès illimité et infrastructure dédiée</p>
+    <div class="price price--quote">Sur devis</div>
+    <p class="price-note">Grandes structures &amp; réseaux</p>
+    <p class="incl">Pack complet &amp; sur-mesure</p>
+    <ul class="checklist"><li>Accès illimité au Hub API Global : GDS Amadeus, GDS Sabre, Travelgate, multi-centrales</li><li>Serveurs dédiés</li><li>Support prioritaire 24/7</li></ul>
+    <a class="btn btn--ghost" href="/formulaire-site-internet-agences-de-voyages/">Contactez-nous</a>
+   </div>
+  </div>
+  <div class="px-assure reveal">
+   <div><span class="ico">{{i:tag}}</span><span><b>Aucune commission sur vos ventes en ligne</b>Un abonnement fixe mensuel, clair et sans frais masqués.</span></div>
+   <div><span class="ico ico--o">{{i:refresh}}</span><span><b>Un plan qui évolue avec vous</b>Démarrez en production locale, ajoutez des API quand vous êtes prêt.</span></div>
+   <div><span class="ico">{{i:shield}}</span><span><b>Vos données vous appartiennent</b>Réversibilité complète et mises à jour automatiques.</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section--sm" style="padding-top:0"><div class="container"><div class="tldr reveal"><h2>L’essentiel <small>La création de site web agence de voyage en bref</small></h2><ul>
+<li><b>Prix :</b> la création d’un site web agence de voyage avec Travelife coûte 99&nbsp;€ par mois (Starter, configuration 500&nbsp;€) ou 399&nbsp;€ par mois (Advanced, configuration 1&nbsp;500&nbsp;€) ; l’offre Premium / Enterprise est sur devis.</li>
+<li><b>Pack Lancement :</b> pour le plan Starter, Travelife propose en option l’intégration des 10 premiers circuits phares de l’agence pour 300&nbsp;€.</li>
+<li><b>Sans commission :</b> Travelife ne prélève aucune commission sur les ventes réalisées via le site B2C de l’agence ; seul un abonnement fixe mensuel est facturé.</li>
+<li><b>Vente hybride :</b> le site Travelife vend à la fois les produits propres de l’agence (contrats hôtels directs, tours, packages) et les produits d’agrégateurs mondiaux via API.</li>
+<li><b>Connectivité :</b> le plan Advanced inclut 2 API (1 flux Hôtel + 1 flux Vol) ; le plan Premium donne un accès illimité au hub API (Amadeus, Sabre, Travelgate, multi-centrales).</li>
+<li><b>Référencement :</b> le site Travelife respecte les Core Web Vitals de Google, laisse le contrôle des balises meta et des URL et intègre un blog natif.</li>
+</ul></div></div></section>
+
+<section class="section--sm section--sand">
+ <div class="container">
+  <div class="cfg reveal">
+   <div class="ph"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=75" alt="Mains sur un ordinateur portable pendant la configuration d'un site web d'agence de voyage" loading="lazy"></div>
+   <div class="tx">
+    <span class="eyebrow">Sur-mesure</span>
+    <h2>Une configuration spécifique en <span class="serif">tête</span>&nbsp;?</h2>
+    <p class="lead">Discutons de vos besoins particuliers et créons ensemble une solution adaptée à votre flux de travail.</p>
+    <div class="btn-row"><a class="btn btn--violet" href="https://starter.b2c.travelife.io/public/fr" target="_blank" rel="noopener">Consulter le site démo {{i:arrow}}</a><a class="btn btn--ghost" href="/formulaire-site-internet-agences-de-voyages/">Décrire mon projet</a></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="comparatif">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">Comparatif</span>
+   <h2>Détail des solutions site web agence de voyage et <span class="serif">fonctionnalités</span></h2>
+   <p>Starter, Advanced ou Premium : comparez positionnement, modules, connectivité API et niveau de support.</p>
+  </div>
+  <p class="cmp-hint">{{i:arrow}} Faites défiler le tableau horizontalement</p>
+  <div class="cmp reveal"><table><thead><tr><th scope="col">Fonctionnalités</th><th scope="col"><b>B2C Starter</b><small>99 € / mois</small></th><th scope="col" class="hl"><span class="chip chip--o">Le cœur de cible</span><b>B2C Advanced</b><small>399 € / mois</small></th><th scope="col"><b>B2C Premium</b><small>Sur devis</small></th></tr></thead><tbody><tr class="grp"><th colspan="4" scope="colgroup"><span>Tarification &amp; positionnement</span></th></tr><tr><td>Prix mensuel</td><td><span class="val">99 €</span></td><td class="hl"><span class="val">399 €</span></td><td><span class="val">Sur devis</span></td></tr><tr><td>Profil d’agence idéal</td><td>Agences avec propre production (sans API)</td><td class="hl">Agences Outbound / OTA standard</td><td>Grosses agences &amp; réseaux d’agences</td></tr><tr class="grp"><th colspan="4" scope="colgroup"><span>Plateforme &amp; contenu (CMS)</span></th></tr><tr><td>CMS complet (gestion du site web)</td><td><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td><td class="hl"><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td><td><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td></tr><tr><td>Blog, formulaires &amp; pages dynamiques</td><td><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td><td class="hl"><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td><td><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td></tr><tr class="grp"><th colspan="4" scope="colgroup"><span>Production propre (contrats directs)</span></th></tr><tr><td>Module Hôtels &amp; contrats directs</td><td><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td><td class="hl"><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td><td><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td></tr><tr><td>Module Tours &amp; activités</td><td><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td><td class="hl"><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td><td><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td></tr><tr><td>Module Packages (création de forfaits)</td><td><span class="n"></span><span class="sr">Non inclus</span></td><td class="hl"><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td><td><span class="y">{{i:check}}<span class="sr">Inclus</span></span></td></tr><tr class="grp"><th colspan="4" scope="colgroup"><span>Connectivité, API &amp; moteurs tiers</span></th></tr><tr><td>Intégrations API externes</td><td>Indisponible (production locale uniquement)</td><td class="hl">Sélection jusqu’à 2 agrégateurs (ex. 1 Hôtel + 1 Vol comme Air Arabia / Kyte)</td><td>Accès total &amp; illimité (Amadeus, Sabre, Travelgate…)</td></tr><tr><td>Frais fournisseurs tiers</td><td><span class="n"></span><span class="sr">Non inclus</span></td><td class="hl">Hors frais fournisseurs</td><td>Inclus ou selon contrat</td></tr><tr class="grp"><th colspan="4" scope="colgroup"><span>Infrastructure &amp; support</span></th></tr><tr><td>Type d’hébergement</td><td>Serveur Cloud mutualisé</td><td class="hl">Serveur Cloud optimisé</td><td>Serveurs dédiés haute performance</td></tr><tr><td>Support technique</td><td>Support standard (mail / ticket)</td><td class="hl">Support prioritaire (heures ouvrées)</td><td>Support VIP dédié 24h/24 &amp; 7j/7</td></tr></tbody></table></div>
+ </div>
+</section>
+
+<section class="section section--dark usp" id="usp">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">Notre différence</span>
+   <h2>La proposition de valeur <span class="serif grad-text">unique</span> (USP)</h2>
+   <p>Pourquoi Travelife est la plateforme technologique idéale pour propulser votre activité touristique.</p>
+  </div>
+  <div class="bento">
+   <div class="tile tile--violet span-3 reveal">
+    <span class="tag">{{i:layers}} Hybridation</span>
+    <h3>Hybridation totale</h3>
+    <p>Vendez vos propres produits à forte marge (vos contrats directs, vos packages) à côté des produits d’agrégateurs mondiaux (API).</p>
+    <div class="tile-visual" style="padding-bottom:30px" aria-hidden="true">
+     <div class="bk"><span class="t o">{{i:building}}</span><div><b>Riad Kniza, Marrakech · 3 nuits</b><small>Contrat direct · votre marge</small></div><span class="st wait">Production</span></div>
+     <div class="bk"><span class="t">{{i:plane}}</span><div><b>CMN → IST · Vol aller-retour</b><small>Flux API · agrégateur</small></div><span class="st new">API</span></div>
+    </div>
+   </div>
+   <div class="tile tile--photo span-3 reveal reveal-d1" style="min-height:400px">
+    <img class="bg" src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&q=75" alt="Piscine d'un resort tropical mise en avant sur un site d'agence de voyage" loading="lazy">
+    <span class="tag">{{i:palette}} CMS métier</span>
+    <h3>Zéro code, 100&nbsp;% métier</h3>
+    <p>Un CMS flexible avec des « widgets » conçus exclusivement pour le voyage (afficher les hôtels d’une destination en 1 clic, pousser les meilleurs tours).</p>
+   </div>
+   <div class="tile tile--sand span-6 reveal">
+    <div class="yield">
+     <div>
+      <span class="tag">{{i:trend}} Yield</span>
+      <h3>Prêt pour le Yield Management</h3>
+      <p class="mb-0">Gestion fine des suppléments, des saisons, des promotions et des stop sales directement en back-office.</p>
+     </div>
+     <div class="yield-chips" aria-hidden="true">
+      <div><b>Suppléments</b>Pension, vue, single</div>
+      <div class="o"><b>Saisons</b>Haute · moyenne · basse</div>
+      <div class="o"><b>Promotions</b>Early booking, long séjour</div>
+      <div><b>Stop sales</b>En un clic, par période</div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section section--sand" id="piliers">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">Architecture</span>
+   <h2>Structure de l’offre <span class="serif">commerciale</span></h2>
+   <p>Une architecture claire divisée en 3 piliers technologiques indispensables pour piloter votre activité.</p>
+  </div>
+  <div class="steps pillars">
+   <div class="step reveal"><span class="num">1</span><span class="chip chip--o">Pilier 1</span><h3>Le Moteur de Production (votre inventaire propre)</h3>
+    <h4>Module Hôtels directs</h4><p>Gestion avancée des contrats : saisonnalité, types de chambres, pensions, promotions et stop sales.</p>
+    <h4>Tours &amp; activités</h4><p>Votre propre « Bókun » ou « GetYourGuide » interne pour créer, planifier et vendre des expériences avec gestion des jauges et disponibilités.</p>
+    <h4>Module Packages Outbound</h4><p>Regroupement dynamique de vols, hôtels et services pour vendre des packages directement en ligne.</p></div>
+   <div class="step reveal reveal-d1"><span class="num">2</span><span class="chip chip--o">Pilier 2</span><h3>Le Hub de Connectivité (l’inventaire mondial via API)</h3>
+    <h4>Aérien</h4><p>Connexion native aux acteurs majeurs du marché mondial. GDS (Amadeus, Galileo, Sabre) • Low-Cost (Kyte, Travelfusion, PKfare) • Direct NDC (Air Arabia)</p>
+    <h4>Hébergement &amp; transferts</h4><p>Passerelle unique et intégrée pour centraliser tous vos fournisseurs tiers : Travelgate, Hotelbeds, Webbeds, Jumbobeds, TBO, Jony Travel.</p></div>
+   <div class="step reveal reveal-d2"><span class="num">3</span><span class="chip chip--o">Pilier 3</span><h3>Le CMS expérientiel (la machine à convertir)</h3>
+    <h4>Éditeur Drag &amp; Drop</h4><p>Créez et modifiez vos pages en toute simplicité grâce à un système intuitif de glisser-déposer.</p>
+    <h4>Plugins dynamiques</h4><p>Intégration instantanée de flux d’hôtels automatiques, de sliders interactifs et de formulaires de capture sur-mesure.</p>
+    <h4>Section Blog &amp; SEO</h4><p>Un espace optimisé pour le référencement naturel afin de maximiser votre visibilité organique et attirer plus de clients.</p></div>
+  </div>
+  <p class="center mt-48 mb-0"><a class="link-arrow" href="/site-internet-pour-agence-de-voyages/">En savoir plus sur le site B2C {{i:arrow}}</a></p>
+ </div>
+</section>
+
+<section class="section" id="faq">
+ <div class="container faq-layout">
+  <div class="faq-aside reveal">
+   <span class="eyebrow">Aide &amp; support</span>
+   <h2>Questions fréquentes sur la création de site web agence de voyage</h2>
+   <p class="lead">Retrouvez toutes les informations essentielles sur la création de votre site web agence de voyage, nos tarifs et l’accompagnement Travelife.</p>
+   <div class="card" style="margin-top:28px;height:auto;background:var(--sand);border-color:var(--sand-2)">
+    <h3 style="font-size:1.1rem">Vous avez encore des questions&nbsp;?</h3>
+    <p><a href="https://www.instagram.com/travelife.ma/" target="_blank" rel="noopener">Suivez-nous sur Instagram</a> ou parlez directement à notre équipe.</p>
+    <div class="btn-row" style="margin-top:16px"><a class="btn btn--violet btn--sm" href="/contactez/">Nous contacter</a><a class="btn btn--ghost btn--sm" href="tel:+212521500605">{{i:phone}} (+212) 5 21 50 06 05</a></div>
+   </div>
+  </div>
+  <div class="reveal reveal-d1">
+   <div class="faq-tabs" role="tablist">
+    <button role="tab" aria-selected="true" aria-controls="faq-a">Offre &amp; tarifs</button>
+    <button role="tab" aria-selected="false" aria-controls="faq-b">Fonctionnalités</button>
+    <button role="tab" aria-selected="false" aria-controls="faq-c">Données &amp; mises à jour</button>
+   </div>
+   <div class="faq">
+    <div class="faq-group" id="faq-a">
+     <details open><summary>Comment Travelife m’aide-t-il à lancer un site web de voyage B2C performant&nbsp;?</summary><div class="answer"><p>Travelife fournit une solution e-commerce clé en main conçue spécifiquement pour la vente grand public. Grâce à notre CMS expérientiel en Drag &amp; Drop, vous configurez un site vitrine et marchand sans compétences en code, capable de gérer le parcours complet du client final : de la recherche d’offres dynamiques à l’achat sécurisé.</p></div></details>
+     <details><summary>Que couvrent exactement les frais de setup&nbsp;?</summary><div class="answer"><p>Ces frais initiaux garantissent l’excellence opérationnelle de votre environnement B2C : ils englobent le déploiement de vos services Cloud dédiés, l’initialisation des bases de données de production, la configuration de vos protocoles de sécurité, ainsi que l’accompagnement technique lors du lancement de votre site.</p></div></details>
+     <details><summary>Les tarifs incluent-ils des commissions sur mes ventes en ligne&nbsp;?</summary><div class="answer"><p>Non. La philosophie de Travelife est de préserver votre rentabilité. Nous ne prélevons aucune commission sur le volume d’affaires réalisé via votre site B2C. Vous payez un abonnement fixe mensuel clair pour une maîtrise totale de votre budget de fonctionnement.</p></div></details>
+     <details><summary>Combien coûte la création d’un site web pour agence de voyage avec Travelife&nbsp;?</summary><div class="answer"><p>La création d’un site web agence de voyage avec Travelife coûte 99&nbsp;€ par mois avec le plan Starter (configuration 500&nbsp;€) et 399&nbsp;€ par mois avec le plan Advanced (configuration 1&nbsp;500&nbsp;€). Le plan Premium / Enterprise, destiné aux grandes structures et aux réseaux d’agences, est sur devis. Pour le plan Starter, le Pack Lancement clé en main, fortement recommandé, ajoute l’intégration de vos 10 premiers circuits phares pour 300&nbsp;€. Aucune commission n’est prélevée sur vos ventes en ligne.</p></div></details>
+     <details><summary>Quelle est la différence entre les plans Starter, Advanced et Premium&nbsp;?</summary><div class="answer"><p>Le plan Starter s’adresse aux agences locales et réceptifs qui vendent leur propre production, sans API externe : CMS complet, contrats hôtels directs, tours &amp; activités, formulaires et blog, sur serveur Cloud mutualisé avec support standard (mail / ticket). Le plan Advanced, cœur de cible des agences outbound et OTA, ajoute le module Packages, 2 API incluses (1 Hôtel + 1 Vol), un serveur Cloud optimisé et un support prioritaire. Le plan Premium / Enterprise offre un accès illimité au hub API global, des serveurs dédiés et un support VIP 24h/24 et 7j/7.</p></div></details>
+     <details><summary>Puis-je faire évoluer mon plan d’abonnement facilement&nbsp;?</summary><div class="answer"><p>Tout à fait. La plateforme est conçue pour être évolutive. Vous pouvez débuter avec une production propre 100&nbsp;% locale (Plan Starter) et basculer sur un plan supérieur (Advanced ou Enterprise) dès que vous décidez d’intégrer des connecteurs API ou d’étendre vos réseaux de distribution.</p></div></details>
+    </div>
+    <div class="faq-group" id="faq-b" hidden>
+     <details><summary>Puis-je vendre à la fois mes propres voyages et des produits via API tiers&nbsp;?</summary><div class="answer"><p>Oui, c’est l’atout majeur de notre architecture hybride. Notre plateforme vous permet de charger directement vos propres contrats d’hôtels, excursions ou circuits (Moteur de Production) tout en injectant les flux de grossistes mondiaux via API (Hotelbeds, Travelgate, Amadeus, Air Arabia). Vos clients combinent le tout dans un panier unique.</p></div></details>
+     <details><summary>Le site internet B2C créé est-il optimisé pour le référencement naturel (SEO)&nbsp;?</summary><div class="answer"><p>Absolument. La structure technique respecte scrupuleusement les exigences de vitesse de Google (Core Web Vitals). Vous disposez d’un contrôle total sur les balises Meta Titles, descriptions et structures d’URL. De plus, une section Blog est intégrée en natif pour capter du trafic organique sur vos mots-clés stratégiques.</p></div></details>
+     <details><summary>Comment fonctionne la gestion des marges et des tarifs (Yield Management)&nbsp;?</summary><div class="answer"><p>Depuis votre back-office unifié, vous pilotez entièrement vos politiques de prix. Vous pouvez appliquer des règles de marges automatiques (markups) en pourcentage ou valeur fixe selon le fournisseur API, la destination, le produit ou la saisonnalité, et configurer des frais de dossier visibles ou transparents pour l’acheteur.</p></div></details>
+     <details><summary>Quels sont les modes de paiement disponibles pour le client final&nbsp;?</summary><div class="answer"><p>Travelife s’intègre nativement avec les principales passerelles de paiement en ligne sécurisées (cartes bancaires locales et internationales). Vous avez la possibilité de paramétrer des règles d’encaissement souples : paiement intégral à l’achat, paiement d’un acompte en ligne avec gestion automatisée du solde ou simple demande de devis.</p></div></details>
+     <details><summary>Puis-je connecter mon site web d’agence de voyage à Amadeus, Sabre ou Hotelbeds&nbsp;?</summary><div class="answer"><p>Oui, à partir du plan Advanced. Ce plan inclut 2 API au choix (1 flux Hôtel et 1 flux Vol, par exemple Air Arabia ou Kyte), avec mapping et tests complets réalisés par Travelife, hors frais de credentials fournisseurs. Le plan Premium / Enterprise donne un accès illimité au hub API global : GDS Amadeus, Sabre et Galileo, Travelgate, Hotelbeds, Webbeds, Jumbobeds, TBO et d’autres centrales. Le plan Starter, lui, est réservé à la production locale, sans API externe.</p></div></details>
+     <details><summary>Quelle formation est incluse avec mon site web d’agence de voyage&nbsp;?</summary><div class="answer"><p>La formation dépend du plan. Le Pack Lancement du plan Starter comprend 2 heures de formation en ligne, en plus de la configuration du domaine, de l’intégration du logo et de la charte graphique de base. Le plan Advanced inclut une formation initiale de 6 à 8 heures, ainsi qu’un paramétrage personnalisé de vos règles de tarification. Grâce au CMS en Drag &amp; Drop, vos équipes peuvent ensuite créer et modifier leurs pages sans compétences en code.</p></div></details>
+     <details><summary>Peut-on voir un exemple de site web d’agence de voyage réalisé avec Travelife&nbsp;?</summary><div class="answer"><p>Oui. Travelife met à disposition un <a href="https://starter.b2c.travelife.io/public/fr" target="_blank" rel="noopener">site démo B2C</a> pour découvrir le parcours de réservation tel que le verront vos clients, de la recherche d’offres jusqu’à la réservation. Vous pouvez aussi demander une démonstration personnalisée via le <a href="/formulaire-site-internet-agences-de-voyages/">formulaire site internet</a> ou au (+212) 5 21 50 06 05 pour voir comment votre propre catalogue et vos contrats directs seraient présentés.</p></div></details>
+    </div>
+    <div class="faq-group" id="faq-c" hidden>
+     <details><summary>Puis-je récupérer mes données en cas de départ&nbsp;?</summary><div class="answer"><p>Vos données clients, vos grilles de tarifs et vos historiques de réservations restent votre propriété exclusive. Nous garantissons une réversibilité technique complète et transparente grâce à des options d’export structurées pour l’intégralité de vos bases de données.</p></div></details>
+     <details><summary>Les mises à jour de la solution e-commerce sont-elles incluses&nbsp;?</summary><div class="answer"><p>Oui. En tant que solution technologique SaaS moderne, l’ensemble des correctifs de sécurité, l’entretien des connecteurs API fournisseurs et le déploiement des nouvelles fonctionnalités du CMS sont appliqués de manière entièrement automatique et transparente, sans aucune interruption pour vos clients.</p></div></details>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section section--sand">
+ <div class="container split">
+  <div class="reveal">
+   <span class="eyebrow">Clé en main</span>
+   <h2>Votre propre site internet de voyage <span class="serif">clé en main</span></h2>
+   <p class="lead">Propulsez votre activité grâce à une création sur-mesure. Notre solution e-commerce vous permet de déployer un site web agence de voyage performant, moderne et entièrement connecté aux API mondiales pour capter vos clients et automatiser vos réservations.</p>
+   <ul class="checklist checklist--2col"><li>100&nbsp;% création B2C</li><li>Zéro frais masqués</li><li>Création sur mesure</li><li>Connexion API</li><li>Paiement en ligne</li><li>Technologie B2C</li></ul>
+   <div class="btn-row"><a class="btn btn--primary" href="/formulaire-site-internet-agences-de-voyages/">Demander une démo {{i:arrow}}</a><a class="btn btn--ghost" href="https://starter.b2c.travelife.io/public/fr" target="_blank" rel="noopener">Voir le site démo</a></div>
+  </div>
+  <div class="reveal reveal-d1" style="position:relative">
+   <div class="media"><img src="https://travelife.ma/wp-content/uploads/2026/05/travelive-website.webp" alt="Création de site web agence de voyage B2C avec Travelife : aperçu du site de réservation" loading="lazy" width="640" height="640"></div>
+   <div class="float-card float-card--a"><span class="ico">{{i:globe}}</span><span><b>100&nbsp;% création B2C</b>Zéro frais masqués</span></div>
+  </div>
+ </div>
+</section>
+
+{{inc:cta}}

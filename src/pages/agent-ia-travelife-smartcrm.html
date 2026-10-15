@@ -1,0 +1,302 @@
+<!--META {"path":"agent-ia-travelife-smartcrm/","nav":"produits","dark":true,"title":"Agent IA & Chatbot pour Agences | Travelife SmartCRM","desc":"Découvrez l'Agent IA et le Chatbot Travelife connectés à votre SmartCRM. Automatisez la qualification de vos clients grâce à l'AI 24h/24.","canonical":"https://travelife.ma/agent-ia-travelife-smartcrm/","og":"https://travelife.ma/wp-content/uploads/2026/09/Selection-dhotels-a-Marrakech.png","crumbs":[["Agent IA & SmartCRM","/agent-ia-travelife-smartcrm/"]]} -->
+<style>
+.aia-hero h1{font-size:clamp(2.2rem,4.3vw,3.6rem)}
+.aia-sub{color:#fff;font-size:clamp(1.2rem,2vw,1.55rem);font-weight:600;margin-bottom:16px}
+.aia-hero .trust-row{justify-content:flex-start;gap:10px 22px}
+.aia-stage{position:relative;padding:20px 0}
+.aia-stage::before{content:"";position:absolute;left:50%;top:50%;width:440px;height:440px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(122,92,255,.45),transparent 65%);pointer-events:none}
+.aia-stage .phone{position:relative;box-shadow:var(--glow)}
+.aia-num{display:inline-flex;align-items:center;gap:12px;font-family:var(--f-display);font-weight:700;color:var(--violet);font-size:.95rem;margin-bottom:16px;letter-spacing:.02em}
+.aia-num span{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--ink);color:#fff;font-size:.9rem}
+.aia-num--o span{background:var(--orange)}
+.aia-h2{font-size:clamp(1.7rem,3vw,2.5rem)}
+.tile--dark .aia-h2{color:#fff}
+.aia-voice{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--sh-3);padding:28px;max-width:520px;margin-left:auto}
+.aia-voice-head{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.aia-voice-head .ico{margin:0;background:#E6F9EE;border-color:#C9F0D8;color:#1FA855}
+.aia-voice-head b{display:block;color:var(--ink);font-family:var(--f-display)}
+.aia-voice-head small{color:var(--muted)}
+.aia-wave{display:flex;align-items:center;gap:10px;background:#DCF8C6;border-radius:14px;padding:12px 16px;margin-bottom:18px}
+.aia-wave .pl{width:32px;height:32px;border-radius:50%;background:#1FA855;color:#fff;display:grid;place-items:center;flex:none}
+.aia-wave .pl svg{width:13px;height:13px;fill:#fff}
+.aia-wave .bars{display:flex;align-items:center;gap:3px;flex:1;height:30px}
+.aia-wave .bars i{display:block;width:3px;border-radius:3px;background:#3B8D57;opacity:.75}
+.aia-wave small{color:#3B6B4A;font-size:.78rem;font-weight:600}
+.aia-quote{border-left:3px solid var(--orange);background:var(--sand);padding:14px 18px;border-radius:0 12px 12px 0;color:var(--ink);font-style:italic;margin-bottom:16px}
+.aia-intent{display:flex;flex-wrap:wrap;gap:8px}
+.aia-intent span{font-size:.8rem;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--violet-50);color:var(--violet);border:1px solid var(--violet-100)}
+.aia-intent span:first-child{background:var(--ink);color:#fff;border-color:var(--ink)}
+.aia-shot{display:block;width:100%;border-radius:14px;border:1px solid var(--line);box-shadow:var(--sh-2);background:#fff}
+.aia-chat{display:flex;flex-direction:column;gap:10px;margin-top:auto;padding-top:24px}
+.aia-chat p{margin:0;padding:12px 16px;font-size:.93rem;max-width:88%;line-height:1.5}
+.aia-chat .in{background:#fff;border:1px solid var(--line);border-radius:16px 16px 16px 4px;color:var(--ink)}
+.aia-chat .ai{background:linear-gradient(160deg,#6C50EA,#5236CC);color:#fff;border-radius:16px 16px 4px 16px;align-self:flex-end}
+.aia-chat .pay{align-self:flex-end;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.aia-chat .pay span{font-size:.78rem;font-weight:600;padding:7px 12px;border-radius:999px;background:#fff;border:1px solid var(--line-2);color:var(--ink)}
+.aia-flowsteps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.aia-fs{position:relative;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:26px}
+.aia-fs:not(:last-child)::after{content:"";position:absolute;right:-13px;top:50%;width:10px;height:10px;border-top:2px solid var(--orange-2);border-right:2px solid var(--orange-2);transform:translateY(-50%) rotate(45deg);z-index:1}
+.aia-fs .ico{margin-bottom:18px}
+.aia-fs small{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--violet-3);font-weight:600;margin-bottom:6px}
+.aia-fs h3{font-size:1.15rem;margin-bottom:4px}
+.aia-fs p{margin:0;color:#A9A4CC;font-size:.94rem}
+.aia-eco{display:grid;grid-template-columns:repeat(4,1fr);gap:0;align-items:stretch;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:#fff;margin-bottom:48px}
+.aia-eco > div{padding:26px 24px;border-left:1px solid var(--line);position:relative}
+.aia-eco > div:first-child{border-left:0}
+.aia-eco > div:not(:last-child)::after{content:"→";position:absolute;right:-14px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center;font-size:.8rem;color:var(--violet);z-index:1}
+.aia-eco b{display:block;font-family:var(--f-display);color:var(--ink);font-size:1.08rem;margin:12px 0 4px}
+.aia-eco span{color:var(--muted);font-size:.9rem}
+.aia-eco .ico{margin:0;width:42px;height:42px}
+.aia-eco .ico svg{width:20px;height:20px}
+.aia-eco > div.hl{background:var(--ink)}
+.aia-eco > div.hl b{color:#fff}.aia-eco > div.hl span{color:#A9A4CC}
+.aia-eco > div.hl .ico{background:rgba(122,92,255,.2);border-color:rgba(122,92,255,.35);color:#C9BCFF}
+.aia-res{margin-top:auto;padding-top:18px;display:flex;flex-wrap:wrap;gap:6px}
+.aia-res span{font-size:.75rem;font-weight:600;padding:5px 10px;border-radius:999px;background:#E7F8EF;color:#0E8A57}
+.tile--dark .aia-res span,.tile--violet .aia-res span{background:rgba(255,255,255,.12);color:#fff}
+.aia-pipe{position:relative;max-width:1060px;margin:0 auto}
+.aia-pipe .media{border-radius:var(--r-lg)}
+@media (max-width:1080px){.aia-flowsteps{grid-template-columns:1fr 1fr}.aia-fs:nth-child(2):not(:last-child)::after{display:none}.aia-eco{grid-template-columns:1fr 1fr}.aia-eco > div:nth-child(3){border-left:0}.aia-eco > div:nth-child(n+3){border-top:1px solid var(--line)}.aia-eco > div:not(:last-child)::after{display:none}}
+@media (max-width:640px){.aia-flowsteps,.aia-eco{grid-template-columns:1fr}.aia-fs:not(:last-child)::after{display:none}.aia-eco > div{border-left:0!important;border-top:1px solid var(--line)}.aia-eco > div:first-child{border-top:0}.aia-voice{padding:20px}.aia-chat p{max-width:94%}}
+</style>
+
+<section class="page-hero page-hero--dark aia-hero">
+ <div class="container">
+  <ol class="breadcrumb"><li><a href="/">Accueil</a></li><li>Travelife SmartCRM | Votre agence connectée et automatisée 24h/24</li></ol>
+  <div class="split split--wide-text">
+   <div>
+    <div class="hero-badge"><span>Nouveau</span>Agent IA Travelife</div>
+    <h1>Ne ratez plus aucun voyageur&nbsp;: Votre Agent IA &amp; Chatbot <span class="serif grad-text">24h/24</span></h1>
+    <h2 class="aia-sub">Votre agence vend, même après la fermeture.</h2>
+    <p class="lead">Un Agent IA conçu pour le voyage, connecté à vos offres et à Travelife SmartCRM. Il échange avec vos clients, comprend leurs besoins, recherche vos produits et prépare la vente avant de passer le relais à votre équipe.</p>
+    <div class="btn-row">
+     <a class="btn btn--primary" href="/contactez/">Demander une démonstration {{i:arrow}}</a>
+    </div>
+    <div class="trust-row">
+     <span>{{i:check}} Disponible 24/24</span>
+     <span>{{i:check}} Plus de demandes qualifiées</span>
+     <span>{{i:check}} Meilleur taux de conversion</span>
+     <span>{{i:check}} Clients mieux suivis</span>
+    </div>
+   </div>
+   <div class="aia-stage reveal">
+    {{inc:mock-whatsapp}}
+    <div class="chip-float" style="left:-6px;top:6px"><span class="ico ico--wa">{{i:whatsapp}}</span><span><b>Nouveau message</b>WhatsApp · 23:41</span></div>
+    <div class="chip-float cf-2" style="right:-10px;bottom:70px"><span class="ico">{{i:crm}}</span><span><b>Demande qualifiée</b>Synchronisée dans SmartCRM</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section--sm">
+ <div class="container">
+  <div class="tldr reveal">
+   <h2>L’essentiel <small>Agent IA &amp; chatbot pour agences de voyages</small></h2>
+   <ul>
+    <li><b>Disponibilité :</b> l’Agent IA Travelife répond aux voyageurs 24 h/24, y compris le soir et le week-end, sur WhatsApp et sur le chat du site web de l’agence.</li>
+    <li><b>Qualification :</b> l’Agent IA Travelife comprend les messages écrits et vocaux, en plusieurs langues, et pose les questions utiles (dates, budget, voyageurs) jusqu’à obtenir une demande complète.</li>
+    <li><b>Recherche réelle :</b> l’Agent IA Travelife interroge le catalogue Travelife B2C, les contrats hôteliers et les API partenaires de l’agence au lieu de donner des réponses génériques.</li>
+    <li><b>CRM :</b> chaque échange, document et préférence est centralisé dans Travelife SmartCRM, avec un résumé rédigé par l’IA pour le conseiller.</li>
+    <li><b>Meta Ads :</b> les leads Facebook Ads et Instagram Ads sont injectés automatiquement dans Travelife SmartCRM.</li>
+    <li><b>Rôle humain :</b> l’Agent IA Travelife ne remplace pas les conseillers voyage ; il prépare la vente et passe le relais à l’équipe pour conclure.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container split">
+  <div class="reveal">
+   <div class="aia-num"><span>01</span>Conversation naturelle</div>
+   <h2 class="aia-h2">Vos clients parlent naturellement. Votre Agent IA <span class="serif">comprend</span> leur voyage.</h2>
+   <p class="lead">Un message, un vocal ou une simple conversation suffit. L’Agent IA pose les bonnes questions jusqu’à obtenir une demande complète et exploitable.</p>
+   <ul class="checklist checklist--2col">
+    <li>Messages vocaux</li>
+    <li>WhatsApp</li>
+    <li>Chat sur votre site</li>
+    <li>Plusieurs langues</li>
+   </ul>
+  </div>
+  <div class="reveal reveal-d1">
+   <div class="aia-voice" role="img" aria-label="Message vocal WhatsApp transcrit et analysé par l’Agent IA">
+    <div class="aia-voice-head"><span class="ico">{{i:whatsapp}}</span><span><b>Message vocal reçu</b><small>0:14 s · Français / Arabe</small></span></div>
+    <div class="aia-wave"><span class="pl">{{i:play}}</span><span class="bars"><i style="height:30%"></i><i style="height:55%"></i><i style="height:80%"></i><i style="height:45%"></i><i style="height:95%"></i><i style="height:60%"></i><i style="height:35%"></i><i style="height:70%"></i><i style="height:100%"></i><i style="height:50%"></i><i style="height:30%"></i><i style="height:65%"></i><i style="height:85%"></i><i style="height:40%"></i><i style="height:55%"></i><i style="height:75%"></i><i style="height:35%"></i><i style="height:60%"></i><i style="height:90%"></i><i style="height:45%"></i><i style="height:25%"></i><i style="height:50%"></i><i style="height:70%"></i><i style="height:30%"></i></span><small>0:14</small></div>
+    <p style="font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--violet);margin-bottom:8px">✦ Transcription &amp; intention détectée</p>
+    <div class="aia-quote">« Je veux un week-end en amoureux à Agadir le mois prochain… »</div>
+    <div class="aia-intent"><span>Séjour</span><span>Agadir</span><span>2 voyageurs</span><span>Week-end</span><span>Mois prochain</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section section--sand">
+ <div class="container">
+  <div class="bento">
+   <div class="tile span-3 reveal">
+    <div class="aia-num"><span>02</span>Recherche intelligente</div>
+    <h2 class="aia-h2">Il ne se contente pas de discuter. Il recherche réellement vos offres.</h2>
+    <p>L’Agent IA interroge instantanément vos catalogues et bases de données connectées pour proposer les meilleures disponibilités.</p>
+    <div style="margin-top:auto;padding-top:24px"><img class="aia-shot" src="https://travelife.ma/wp-content/uploads/2026/09/Selection-dhotels-a-Marrakech.png" alt="Sélection d’hôtels à Marrakech proposée par l’Agent IA Travelife" loading="lazy"></div>
+   </div>
+   <div class="tile tile--dark span-3 reveal reveal-d1">
+    <div class="aia-num aia-num--o" style="color:var(--orange-2)"><span>03</span>Propositions &amp; paiement</div>
+    <h2 class="aia-h2">L’Agent IA présente vos offres et gère les modalités de paiement.</h2>
+    <p>Le client reçoit des propositions claires avec photos, détails et prix. Il peut poser ses questions, comparer et obtenir instantanément les solutions de paiement sécurisées adaptées pour confirmer son voyage.</p>
+    <div class="aia-chat" role="img" aria-label="Échange entre un client et l’Agent IA au sujet du paiement">
+     <p class="in">La première proposition me convient. Comment puis-je réserver&nbsp;?</p>
+     <p class="ai">Parfait&nbsp;! Je peux vous présenter les modalités de paiement prévues par l’agence pour poursuivre la réservation.</p>
+     <div class="pay"><span>Paiement en ligne</span><span>Virement · acompte</span></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="split split--reverse">
+   <div class="reveal" style="position:relative">
+    <div class="media"><img src="https://travelife.ma/wp-content/uploads/2026/09/55-e1790247194482.png" alt="Paiement et documents suivis par l’Agent IA Travelife" loading="lazy"></div>
+    <div class="float-card float-card--a"><span class="ico">{{i:file}}</span><span><b>Justificatif enregistré</b>Rattaché au dossier client</span></div>
+   </div>
+   <div class="reveal reveal-d1">
+    <div class="aia-num"><span>04</span>Paiement et documents</div>
+    <h2 class="aia-h2">Accompagnez le client jusqu’à la <span class="serif">prochaine étape</span>.</h2>
+    <p class="lead">L’Agent IA valide chaque étape en temps réel pour fluidifier le parcours tout en gardant votre équipe informée.</p>
+    <ul class="checklist checklist--2col">
+     <li>Acompte reçu</li>
+     <li>Justificatif enregistré</li>
+     <li>Dossier CRM créé</li>
+     <li>Conseiller informé</li>
+    </ul>
+   </div>
+  </div>
+  <div class="split" style="margin-top:120px">
+   <div class="reveal">
+    <div class="aia-num aia-num--o"><span>05</span>Prise en charge par votre équipe</div>
+    <h2 class="aia-h2">Votre conseiller retrouve tout. Sans repartir de zéro.</h2>
+    <p class="lead">Dans Travelife SmartCRM, chaque prospect a son histoire : la demande, les échanges, les offres, les documents, les notes et la prochaine action.</p>
+    <div class="aia-intent" style="margin-top:22px"><span>Demande</span><span>Échanges</span><span>Offres</span><span>Documents</span><span>Notes</span><span>Prochaine action</span></div>
+   </div>
+   <div class="reveal reveal-d1" style="position:relative">
+    <div class="media"><img src="https://travelife.ma/wp-content/uploads/2026/09/a.webp" alt="Aperçu de la fiche prospect dans Travelife SmartCRM" loading="lazy"></div>
+    <div class="float-card float-card--b"><span class="ico">{{i:users}}</span><span><b>Passage de relais</b>Historique conservé</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section section--dark">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">Le parcours</span>
+   <h2>L’IA fait avancer la vente. Votre équipe <span class="serif grad-text">garde la main</span>.</h2>
+   <p>Un parcours fluide et automatisé, conçu pour maximiser vos conversions sans effort.</p>
+  </div>
+  <div class="aia-flowsteps">
+   <div class="aia-fs reveal"><span class="ico">{{i:whatsapp}}</span><small>01</small><h3>Point d’entrée</h3><p>Client WhatsApp / Web</p></div>
+   <div class="aia-fs reveal reveal-d1"><span class="ico ico--o">{{i:bot}}</span><small>02</small><h3>Traitement IA</h3><p>Agent IA Travelife</p></div>
+   <div class="aia-fs reveal reveal-d2"><span class="ico">{{i:refresh}}</span><small>03</small><h3>Synchronisation</h3><p>Travelife SmartCRM</p></div>
+   <div class="aia-fs reveal reveal-d3"><span class="ico ico--o">{{i:handshake}}</span><small>04</small><h3>Conclusion</h3><p>Conseiller voyage</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">06 · Un écosystème connecté</span>
+   <h2>Plusieurs agents. <span class="serif">Un seul</span> SmartCRM.</h2>
+   <p>Des missions concrètes, selon les informations et les règles que vous définissez.</p>
+  </div>
+  <div class="center reveal mx-auto" style="max-width:760px;margin-bottom:40px">
+   <h3>Pas un chatbot générique. Un Agent IA intégré à votre TravelTech.</h3>
+   <p class="text-muted mb-0">Votre Agent IA travaille avec l’ensemble de votre environnement Travelife : Meta Ads, WhatsApp, Travelife B2C, vos moteurs et Travelife SmartCRM.</p>
+  </div>
+  <div class="aia-eco reveal">
+   <div><span class="ico ico--o">{{i:target}}</span><b>Meta Ads • WhatsApp / Web</b><span>Acquisition &amp; réseaux sociaux</span></div>
+   <div class="hl"><span class="ico">{{i:bot}}</span><b>Agent IA</b><span>Comprend • Qualifie • Propose</span></div>
+   <div><span class="ico">{{i:globe}}</span><b>Travelife B2C</b><span>Catalogue B2C / produits voyage</span></div>
+   <div><span class="ico ico--o">{{i:users}}</span><b>Votre équipe</b><span>Conseillers voyage • Aux commandes</span></div>
+  </div>
+  <div class="bento">
+   <div class="tile tile--violet span-2 reveal"><span class="tag">{{i:bot}} Commercial</span><h3>Agent IA commercial</h3><p>Répond, qualifie et présente vos offres.</p><div class="aia-res"><span>Besoin qualifié</span><span>Conseiller informé</span></div></div>
+   <div class="tile span-2 reveal reveal-d1"><span class="tag">{{i:target}} Meta Ads</span><h3>Agent IA Lead Meta</h3><p>Incorpore automatiquement les leads Facebook / Instagram Ads dans le CRM.</p><div class="aia-res"><span>Lead injecté</span><span>Engagement immédiat</span></div></div>
+   <div class="tile tile--sand span-2 reveal reveal-d2"><span class="tag">{{i:search}} Catalogue</span><h3>Agent IA de recherche</h3><p>Interroge votre catalogue et vos moteurs.</p><div class="aia-res"><span>Recherche lancée</span><span>Offres proposées</span></div></div>
+   <div class="tile tile--sand span-3 reveal"><span class="tag">{{i:refresh}} Relances</span><h3>Agent IA de relance</h3><p>Prépare des relances contextualisées.</p><div class="aia-res"><span>Relance prête à valider</span></div></div>
+   <div class="tile tile--dark span-3 reveal reveal-d1"><span class="tag">{{i:users}} Équipe</span><h3>Assistant du conseiller</h3><p>Résume la relation et suggère la prochaine action.</p><div class="aia-res"><span>Passage de relais</span><span>Historique conservé</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="section section--sand">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">07 · Pipeline commercial</span>
+   <h2>Chaque opportunité avance avec <span class="serif">votre équipe</span>.</h2>
+   <p>Visualisez en un coup d’œil toutes vos demandes et leur prochaine action, du premier message à la réservation confirmée.</p>
+  </div>
+  <div class="aia-pipe reveal">
+   <div class="media"><img src="https://travelife.ma/wp-content/uploads/2026/09/5.webp" alt="Pipeline commercial Travelife SmartCRM" loading="lazy"></div>
+   <div class="float-card float-card--a" style="bottom:60px"><span class="ico">{{i:whatsapp}}</span><span><b>Premier message</b>Demande entrante</span></div>
+   <div class="float-card float-card--b"><span class="ico">{{i:check}}</span><span><b>Réservation confirmée</b>Dossier à jour</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="faq">
+ <div class="container faq-layout">
+  <div class="faq-aside reveal">
+   <span class="eyebrow">Aide &amp; support IA</span>
+   <h2>Questions fréquentes sur l’Agent IA Travelife</h2>
+   <p class="lead">Tout ce que vous devez savoir sur l’Agent IA Travelife, la synchronisation Meta &amp; WhatsApp, la TravelTech et la collaboration avec votre équipe de conseillers.</p>
+   <div class="card" style="margin-top:28px;background:var(--ink);border-color:var(--ink)">
+    <h3 style="font-size:1.1rem;color:#fff">Voir l’Agent IA en action&nbsp;?</h3>
+    <p style="color:#A9A4CC">Une démonstration sur vos propres offres et vos canaux.</p>
+    <div class="btn-row" style="margin-top:16px"><a class="btn btn--primary btn--sm" href="/contactez/">Demander une démo</a><a class="btn btn--outline-light btn--sm" href="tel:+212521500605">{{i:phone}} (+212) 5 21 50 06 05</a></div>
+   </div>
+  </div>
+  <div class="reveal reveal-d1">
+   <div class="faq-tabs" role="tablist" style="border-radius:22px;width:auto">
+    <button role="tab" aria-selected="true" aria-controls="faq-a">Rôle &amp; fonctionnement</button>
+    <button role="tab" aria-selected="false" aria-controls="faq-b">Canaux &amp; WhatsApp</button>
+    <button role="tab" aria-selected="false" aria-controls="faq-c">Connexion TravelTech</button>
+    <button role="tab" aria-selected="false" aria-controls="faq-d">Paiements &amp; sécurité</button>
+    <button role="tab" aria-selected="false" aria-controls="faq-e">Mise en place &amp; ROI</button>
+   </div>
+   <div class="faq">
+    <div class="faq-group" id="faq-a">
+     <details open><summary>L’Agent IA remplace-t-il nos conseillers voyage&nbsp;?</summary><div class="answer"><p>Absolument pas. L’Agent IA a été pensé comme un assistant ultra-performant pour décharger votre équipe des tâches répétitives. Il prend en charge le premier accueil 24h/24, qualifie précisément les besoins (budget, dates, composition de la famille, envies particulières) et prépare le terrain. Dès que le projet se précise, un conseiller humain prend le relais en disposant de toutes les clés pour conclure la vente et apporter sa touche d’expertise humaine.</p></div></details>
+     <details><summary>Quelles sont les principales missions quotidiennes de l’Agent IA&nbsp;?</summary><div class="answer"><p>L’Agent IA agit comme un véritable coéquipier digital pour votre agence&nbsp;:</p><p>- Disponibilité immédiate : répondre aux voyageurs de jour comme de nuit en moins d’une minute.<br>- Qualification rigoureuse : poser les bonnes questions pour ne rater aucun détail critique du voyage.<br>- Recherche dynamique : interroger en temps réel vos catalogues et propositions tarifaires.<br>- Suivi et relance : relancer intelligemment les prospects pour maximiser le taux de transformation de vos devis.</p></div></details>
+     <details><summary>Qu’est-ce qu’un agent IA pour agence de voyages&nbsp;?</summary><div class="answer"><p>Un agent IA pour agence de voyages est un assistant conversationnel spécialisé dans le tourisme, capable d’échanger avec les voyageurs, de comprendre leur projet et d’agir dans les outils de l’agence. L’Agent IA Travelife est connecté aux offres de l’agence et à Travelife SmartCRM&nbsp;: il accueille le client sur WhatsApp ou sur le site web, qualifie sa demande (destination, dates, nombre de voyageurs, budget), recherche les produits disponibles, présente des propositions avec photos et prix, puis transmet un dossier complet à un conseiller. L’agence continue ainsi à vendre même après la fermeture.</p></div></details>
+     <details><summary>Quelle différence entre un chatbot classique et l’Agent IA Travelife&nbsp;?</summary><div class="answer"><p>Un chatbot classique suit des scénarios figés et renvoie des réponses génériques. L’Agent IA Travelife comprend le langage naturel, y compris les messages vocaux, et il agit&nbsp;: il interroge réellement votre catalogue Travelife B2C, vos grilles hôtelières et vos API partenaires pour proposer des disponibilités et des tarifs actualisés. Il présente les modalités de paiement prévues par l’agence, rattache les justificatifs au dossier et synchronise tout dans Travelife SmartCRM. C’est un Agent IA intégré à votre TravelTech, pas un chatbot générique posé sur votre site.</p></div></details>
+     <details><summary>Comment s’effectue la transition entre l’IA et un conseiller humain&nbsp;?</summary><div class="answer"><p>Dès qu’un client formule une demande complexe, demande à parler à un humain ou que l’IA détecte une opportunité à fort potentiel, le dossier est instantanément basculé dans le CRM. Une notification est envoyée à l’équipe avec un résumé complet de la conversation, garantissant une continuité de service sans couture pour le voyageur.</p></div></details>
+    </div>
+    <div class="faq-group" id="faq-b" hidden>
+     <details><summary>Sur quels canaux l’Agent IA peut-il interagir avec les clients&nbsp;?</summary><div class="answer"><p>L’Agent IA s’intègre de manière fluide sur votre site web B2C (via une bulle de chat moderne et interactive) ainsi que sur WhatsApp, canal incontournable où les voyageurs apprécient d’échanger rapidement pour organiser leurs vacances ou poser des questions sur leur réservation.</p></div></details>
+     <details><summary>L’Agent IA Travelife répond-il aux clients en plusieurs langues&nbsp;?</summary><div class="answer"><p>Oui. L’Agent IA Travelife échange avec les voyageurs dans plusieurs langues, par exemple en français ou en arabe, à l’écrit comme à l’oral via les messages vocaux WhatsApp. Il transcrit le message, détecte l’intention du client (type de séjour, destination, période, nombre de voyageurs) et structure ces informations dans Travelife SmartCRM. Votre conseiller retrouve ensuite une demande claire et exploitable, quelle que soit la langue utilisée par le voyageur au départ.</p></div></details>
+     <details><summary>Les clients peuvent-ils envoyer des messages vocaux ou utiliser le langage naturel&nbsp;?</summary><div class="answer"><p>Oui, totalement. Qu’il s’agisse d’un message textuel détaillé ou d’une note vocale sur WhatsApp, l’Agent IA analyse le langage naturel et les subtilités des requêtes formulées par les voyageurs. Il comprend le contexte et structure automatiquement les informations pour alimenter votre base de données.</p></div></details>
+    </div>
+    <div class="faq-group" id="faq-c" hidden>
+     <details><summary>Comment l’IA accède-t-elle à nos offres et tarifs en temps réel&nbsp;?</summary><div class="answer"><p>L’Agent IA est directement relié à votre écosystème TravelTech : votre catalogue Travelife B2C, vos grilles contractuelles hôtelières et vos API partenaires. Il ne fournit pas de réponses génériques : il interroge de vraies bases de données pour proposer des disponibilités exactes et des tarifs actualisés.</p></div></details>
+     <details><summary>Comment fonctionne la synchronisation avec les publicités Meta (Facebook Ads / Instagram Ads)&nbsp;?</summary><div class="answer"><p>Notre CRM est directement connecté à l’écosystème Meta. Dès qu’un prospect remplit un formulaire de lead generation sur Facebook Ads ou Instagram Ads, ses coordonnées et informations de voyage sont automatiquement et instantanément ajoutées dans votre SmartCRM. L’IA peut même déclencher un premier contact ultra-rapide par WhatsApp ou SMS pour qualifier le prospect à chaud.</p></div></details>
+     <details><summary>Comment fonctionne la synchronisation avec le Travelife SmartCRM&nbsp;?</summary><div class="answer"><p>Chaque interaction, chaque critère qualifié, chaque préférence exprimée et chaque document partagé est automatiquement centralisé dans le Travelife SmartCRM. Votre équipe commerciale retrouve l’historique complet et un résumé exécutif rédigé par l’IA, ce qui élimine les ressaisies manuelles.</p></div></details>
+     <details><summary>Pouvons-nous connecter nos propres fournisseurs et contrats négociés&nbsp;?</summary><div class="answer"><p>Tout à fait. L’architecture ouverte de Travelife permet d’intégrer vos propres contrats hôteliers négociés, vos accords de partenariat et vos flux spécifiques afin que l’Agent IA les exploite en toute autonomie lors de l’élaboration des propositions de voyages.</p></div></details>
+    </div>
+    <div class="faq-group" id="faq-d" hidden>
+     <details><summary>Quelles solutions de paiement et d’encaissement sont prises en charge&nbsp;?</summary><div class="answer"><p>Travelife s’intègre avec vos solutions d’encaissement et passerelles de paiement sécurisées favorites. L’Agent IA peut guider vos clients et collecter les justificatifs ou se connecter aux passerelles locales et internationales telles que le CMI (idéal pour le marché marocain), Payzone, Stripe, PayPal, ainsi que d’autres solutions sur-mesure selon votre configuration.</p></div></details>
+     <details><summary>Comment se déroule la gestion sécurisée des acomptes et reçus&nbsp;?</summary><div class="answer"><p>En accord avec vos processus internes, l’Agent IA présente les conditions de réservation et peut recevoir directement les preuves de paiement (comme un ordre de virement pour un acompte). Le document est immédiatement rattaché au dossier client dans le SmartCRM, permettant à votre service financier de valider le dossier en un clin d’œil.</p></div></details>
+     <details><summary>Quelles sont les garanties en matière de sécurité et de confidentialité des données&nbsp;?</summary><div class="answer"><p>La plateforme repose sur une infrastructure cloud hautement sécurisée, dotée d’un chiffrement de pointe (HTTPS), d’une gestion rigoureuse des rôles et des accès collaborateurs, ainsi que de sauvegardes automatisées continues pour assurer la protection absolue des données de vos clients.</p></div></details>
+    </div>
+    <div class="faq-group" id="faq-e" hidden>
+     <details><summary>Quel est le délai de déploiement de l’Agent IA pour notre agence&nbsp;?</summary><div class="answer"><p>Grâce à l’intégration native avec l’écosystème Travelife, la mise en place est rapide. Nos experts configurent les scripts conversationnels selon votre positionnement, connectent vos canaux (site web et WhatsApp) et forment vos équipes en quelques jours seulement.</p></div></details>
+     <details><summary>L’automatisation commerciale Travelife SmartCRM peut-elle être financée par GO SIYAHA&nbsp;?</summary><div class="answer"><p>Oui, pour les agences de voyages éligibles au Maroc. Travelife est référencée chez Maroc PME dans le cadre du programme GO SIYAHA, qui soutient la transformation digitale des agences. Ce programme peut financer jusqu’à 90&nbsp;% de plusieurs solutions, dont l’automatisation commerciale avec Travelife SmartCRM, le site web B2C et le logiciel de gestion commerciale. Pour vérifier votre éligibilité et connaître les démarches, contactez l’équipe Travelife au (+212) 5 21 50 06 05 ou à contact@travelife.ma.</p></div></details>
+     <details><summary>Comment obtenir une démonstration de l’Agent IA Travelife&nbsp;?</summary><div class="answer"><p>Il suffit de demander une démonstration depuis la <a href="/contactez/">page contact</a>, par téléphone au (+212) 5 21 50 06 05 ou par e-mail à contact@travelife.ma. Nos experts vous montrent l’Agent IA en action sur vos propres offres et vos canaux (site web et WhatsApp)&nbsp;: conversation avec un voyageur, qualification de la demande, recherche dans votre catalogue, puis passage de relais à un conseiller dans Travelife SmartCRM. Vous pouvez aussi consulter les <a href="/tarifs-logiciel-travelife/">tarifs du logiciel Travelife</a>.</p></div></details>
+     <details><summary>Quel retour sur investissement (ROI) peut-on anticiper&nbsp;?</summary><div class="answer"><p>En capturant les opportunités 24h/24 (en particulier le soir et le week-end lorsque les agences traditionnelles sont fermées) et en éliminant les pertes de temps liées aux requêtes non qualifiées, les agences constatent une augmentation sensible de leurs taux de conversion et une réactivité client immédiate qui renforce considérablement leur compétitivité.</p></div></details>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+{{inc:cta}}

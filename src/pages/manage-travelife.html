@@ -1,0 +1,327 @@
+<!--META {"path":"manage-travelife/","nav":"produits","dark":true,"title":"\"Manage\" Système de gestion commerciale - logiciel Travelife","desc":"Découvrez MANAGE, l’une des meilleures plateformes technologiques au monde qui permet la gestion commerciale de votre agence de voyage","canonical":"https://travelife.ma/manage-travelife/","og":"https://travelife.ma/wp-content/uploads/2022/02/illustration-22-e1773233663432.png","crumbs":[["Manage – Gestion commerciale","/manage-travelife/"]]} -->
+<style>
+/* Hero centré + maquette « dossier » */
+.mg-hero{padding-bottom:0}
+.mg-hero .breadcrumb{justify-content:center}
+.mg-hero .head{max-width:900px;margin:0 auto;text-align:center}
+.mg-hero .head .lead{margin:0 auto;max-width:720px}
+.mg-hero .btn-row{justify-content:center}
+.mg-stage{position:relative;max-width:1000px;margin:72px auto 0}
+.mg-stage .mock{box-shadow:var(--glow);border-bottom-left-radius:0;border-bottom-right-radius:0}
+.mg-stage::after{content:"";position:absolute;left:-12%;right:-12%;bottom:0;height:40%;background:linear-gradient(180deg,rgba(14,11,36,0),var(--ink) 90%);pointer-events:none;z-index:2}
+.mg-stage .chip-float.c1{left:-70px;top:290px}
+.mg-stage .chip-float.c2{right:-60px;top:250px;animation-delay:-3s}
+.mg-track{display:grid;grid-template-columns:repeat(6,1fr);background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 10px 12px;position:relative}
+.mg-track > div{position:relative;text-align:center;font-size:.68rem;color:var(--muted);line-height:1.3}
+.mg-track > div::before{content:"";position:absolute;top:11px;left:-50%;right:50%;height:2px;background:var(--violet)}
+.mg-track > div:first-child::before{display:none}
+.mg-track > div.todo::before{background:var(--line-2)}
+.mg-track i{position:relative;z-index:1;display:grid;place-items:center;width:24px;height:24px;margin:0 auto 6px;border-radius:50%;background:var(--violet);color:#fff;font-style:normal}
+.mg-track i svg{width:12px;height:12px}
+.mg-track .now i{background:var(--orange);box-shadow:0 0 0 5px rgba(255,122,47,.18)}
+.mg-track .todo i{background:#fff;border:2px solid var(--line-2)}
+.mg-track b{display:block;color:var(--ink);font-size:.72rem;font-weight:600}
+.mg-pay{display:grid;gap:8px;font-size:.74rem}
+.mg-pay .row{display:flex;justify-content:space-between;color:var(--muted)}
+.mg-pay .row b{color:var(--ink)}
+.mg-bar{height:8px;border-radius:99px;background:var(--violet-50);overflow:hidden}
+.mg-bar span{display:block;height:100%;width:54%;background:linear-gradient(90deg,var(--violet),var(--orange))}
+/* Intro */
+.mg-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:34px}
+.mg-pills span{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:500;font-size:.92rem;color:var(--ink);box-shadow:var(--sh-1)}
+.mg-pills svg{width:16px;height:16px;color:var(--violet)}
+/* Parcours en 9 étapes : timeline en quinconce */
+.mg-journey{position:relative;overflow:hidden}
+.mg-journey::before{content:"";position:absolute;left:50%;top:-200px;transform:translateX(-50%);width:1100px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(91,63,214,.35),transparent 65%);pointer-events:none}
+.mg-journey > .container{position:relative}
+.mg-flow{position:relative;list-style:none;margin:0 auto;padding:0;max-width:1080px;display:grid;grid-template-columns:1fr 1fr;column-gap:120px;grid-auto-rows:auto}
+.mg-flow::before{content:"";position:absolute;left:50%;top:10px;bottom:10px;width:2px;transform:translateX(-50%);background:linear-gradient(180deg,rgba(122,92,255,0),#7A5CFF 6%,#FF7A2F 94%,rgba(255,122,47,0))}
+.mg-flow > li{position:relative;margin-bottom:-70px}
+.mg-flow > li:nth-child(odd){grid-column:1}
+.mg-flow > li:nth-child(even){grid-column:2;margin-top:110px}
+.mg-flow > li:nth-child(odd) + li:nth-child(even){grid-row:auto}
+.mg-card{position:relative;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:26px 28px 24px;transition:border-color .3s,background .3s,transform .3s var(--ease)}
+.mg-card:hover{border-color:rgba(255,255,255,.24);background:rgba(255,255,255,.065);transform:translateY(-3px)}
+.mg-card .n{position:absolute;top:22px;right:24px;font-family:var(--f-display);font-weight:700;font-size:3.4rem;line-height:1;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.2px rgba(201,188,255,.35)}
+.mg-card .ico{width:44px;height:44px;margin-bottom:16px}
+.mg-card .ico svg{width:21px;height:21px}
+.mg-card h3{color:#fff;font-size:1.22rem;margin-bottom:12px}
+.mg-card h3 small{display:block;font-family:var(--f-body);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-2);margin-bottom:6px}
+.mg-card ul{list-style:none;margin:0;padding:0}
+.mg-card li{position:relative;padding:5px 0 5px 22px;color:#B9B4D9;font-size:.95rem;line-height:1.5}
+.mg-card li::before{content:"";position:absolute;left:2px;top:13px;width:8px;height:8px;border-radius:50%;border:2px solid #9C86FF}
+.mg-flow > li::after{content:"";position:absolute;top:34px;width:16px;height:16px;border-radius:50%;background:var(--ink);border:4px solid #7A5CFF;box-shadow:0 0 0 6px rgba(122,92,255,.15)}
+.mg-flow > li:nth-child(odd)::after{right:-68px}
+.mg-flow > li:nth-child(even)::after{left:-68px;border-color:var(--orange)}
+.mg-flow > li:nth-child(odd) .mg-card::before,.mg-flow > li:nth-child(even) .mg-card::before{content:"";position:absolute;top:41px;width:46px;height:2px;background:rgba(255,255,255,.14)}
+.mg-flow > li:nth-child(odd) .mg-card::before{right:-47px}
+.mg-flow > li:nth-child(even) .mg-card::before{left:-47px}
+.mg-start,.mg-end{position:relative;z-index:1;display:flex;justify-content:center}
+.mg-start span,.mg-end span{display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border-radius:999px;background:var(--ink-3);border:1px solid rgba(255,255,255,.14);color:#fff;font-weight:600;font-size:.9rem}
+.mg-start svg,.mg-end svg{width:16px;height:16px;color:var(--orange-2)}
+.mg-start{margin-bottom:28px}
+.mg-end{margin-top:110px}
+/* Services : fiche technique */
+.mg-list{border-top:1px solid var(--line)}
+.mg-list > div{display:grid;grid-template-columns:56px 1fr;gap:6px 20px;padding:26px 0;border-bottom:1px solid var(--line)}
+.mg-list .ico{margin:0;grid-row:span 2}
+.mg-list h3{font-size:1.16rem;margin:4px 0 2px}
+.mg-list p{margin:0;color:var(--muted);font-size:.98rem}
+.mg-sticky{position:sticky;top:130px}
+/* Schéma */
+.mg-schema .media{max-width:1040px;margin:0 auto}
+.mg-schema{border-radius:var(--r-xl);background:linear-gradient(150deg,#EDE8FF,#FFF1E6);padding:44px}
+.mg-schema .media{box-shadow:var(--sh-2)}
+.photo-band .checklist li{color:#fff;font-size:1.02rem;margin:14px 0}
+.photo-band .checklist li::before{background-color:var(--orange);box-shadow:none}
+@media (max-width:1080px){
+ .mg-stage .chip-float.c1{left:-10px}.mg-stage .chip-float.c2{right:-10px}
+}
+@media (max-width:960px){
+ .mg-flow{grid-template-columns:1fr;column-gap:0;padding-left:44px;max-width:640px}
+ .mg-flow::before{left:11px;transform:none}
+ .mg-flow > li,.mg-flow > li:nth-child(even){grid-column:1;margin:0 0 18px}
+ .mg-flow > li:nth-child(odd)::after,.mg-flow > li:nth-child(even)::after{left:-41px;right:auto}
+ .mg-flow > li:nth-child(odd) .mg-card::before,.mg-flow > li:nth-child(even) .mg-card::before{left:-19px;right:auto;width:18px}
+ .mg-start,.mg-end{justify-content:flex-start;max-width:640px;margin-left:auto;margin-right:auto}
+ .mg-end{margin-top:12px}
+ .mg-sticky{position:static}
+ .mg-schema{padding:20px;border-radius:24px}
+}
+@media (max-width:640px){
+ .mg-track{grid-template-columns:repeat(3,1fr);row-gap:12px}
+ .mg-track > div:nth-child(4)::before{display:none}
+ .mg-stage{margin-top:48px}
+ .mg-hero .breadcrumb li:last-child{max-width:250px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .mg-stage .app-row{grid-template-columns:1fr}
+ .mg-card{padding:22px 20px}
+ .mg-card .n{font-size:2.6rem;top:18px;right:18px}
+ .mg-flow{padding-left:36px}
+ .mg-flow::before{left:7px}
+ .mg-flow > li:nth-child(odd)::after,.mg-flow > li:nth-child(even)::after{left:-37px}
+ .mg-flow > li:nth-child(odd) .mg-card::before,.mg-flow > li:nth-child(even) .mg-card::before{left:-15px;width:14px}
+ .mg-list > div{grid-template-columns:50px 1fr;gap:4px 16px}
+}
+</style>
+
+<section class="page-hero page-hero--dark mg-hero">
+ <div class="grid-bg"></div>
+ <div class="container">
+  <ol class="breadcrumb"><li><a href="/">Accueil</a></li><li>« Manage » La meilleure gestion commerciale de votre agence de voyage</li></ol>
+  <div class="head reveal">
+   <span class="eyebrow">Travelife Manage · ERP tout-en-un</span>
+   <h1>ERP de voyage <span class="serif grad-text">Manage</span></h1>
+   <p class="lead"><b>Manage, le tout-en-un.</b> Travelife Manage, système de gestion commerciale pour agences de voyages, est l’une des premières plateformes technologiques de voyage, développée par Travelife : un ERP de voyage de bout en bout avec moteurs de réservation, intégrations fournisseurs, gestion des agents, redistribution d’API et packaging dynamique. Cloud Travel Agency Software made in Morocco.</p>
+   <div class="btn-row">
+    <a class="btn btn--primary" href="/contactez/">Découvrir le logiciel {{i:arrow}}</a>
+    <a class="btn btn--outline-light" href="#parcours">{{i:layers}} Voir le parcours en 9 étapes</a>
+   </div>
+   <div class="trust-row">
+    <span>{{i:check}} De la réservation à la TVA sur marge</span>
+    <span>{{i:check}} Un seul outil, zéro double saisie</span>
+    <span>{{i:check}} <a href="/tarifs-logiciel-travelife/" style="color:inherit;text-decoration:underline;text-underline-offset:3px">Consulter les tarifs</a></span>
+   </div>
+  </div>
+  <div class="mg-stage reveal reveal-d1">
+   <div class="mock" role="img" aria-label="Dossier client dans Travelife Manage : réservation, devis, commande, facture, règlement et TVA sur marge suivis dans un seul écran">
+    <div class="mock-bar"><i></i><i></i><i></i><div class="mock-url">{{i:lock}} manage.travelife.ma/dossiers/2291</div></div>
+    <div class="app-main">
+     <div class="app-top"><div><h5>Dossier #2291 · Famille Benali</h5><small>Istanbul · 4 pax · 18 → 25 déc. · Conseillère : Salma</small></div><div style="display:flex;gap:8px;align-items:center"><span class="st new">B2C</span><span class="st ok">Facturé</span></div></div>
+     <div class="mg-track" aria-hidden="true">
+      <div><i>{{i:check}}</i><b>Réservation</b>GDS + hôtel</div>
+      <div><i>{{i:check}}</i><b>Devis</b>Envoyé</div>
+      <div><i>{{i:check}}</i><b>Commande</b>Acceptée</div>
+      <div><i>{{i:check}}</i><b>Facture</b>F-2026-0418</div>
+      <div class="now"><i>{{i:wallet}}</i><b>Règlement</b>Acompte reçu</div>
+      <div class="todo"><i></i><b>TVA sur marge</b>Auto</div>
+     </div>
+     <div class="app-row">
+      <div class="panel"><h6>Prestations <small>3 lignes · marge auto</small></h6>
+       <div class="bk"><span class="t">{{i:plane}}</span><div><b>CMN → IST · Turkish Airlines</b><small>Amadeus · 4 billets émis</small></div><span class="st ok">14 200</span></div>
+       <div class="bk"><span class="t o">{{i:building}}</span><div><b>Hôtel Sultanahmet 4★ · 7 nuits</b><small>Hotelbeds · voucher généré</small></div><span class="st ok">16 800</span></div>
+       <div class="bk"><span class="t g">{{i:users}}</span><div><b>Transferts &amp; assurance</b><small>Contrat direct · offline</small></div><span class="st ok">2 400</span></div>
+      </div>
+      <div class="panel"><h6>Règlement client <small>MAD</small></h6>
+       <div class="mg-pay">
+        <div class="row"><span>Total TTC</span><b>33 400,00</b></div>
+        <div class="row"><span>Encaissé · acompte</span><b>18 000,00</b></div>
+        <div class="mg-bar"><span></span></div>
+        <div class="row"><span>Reste à payer</span><b style="color:var(--orange)">15 400,00</b></div>
+        <div class="row"><span>TVA sur marge (20 %)</span><b style="color:var(--violet)">812,50</b></div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="chip-float c1"><span class="ico ico--ok">{{i:check}}</span><span><b>Devis accepté</b>Commande ferme créée</span></div>
+   <div class="chip-float c2"><span class="ico ico--o">{{i:file}}</span><span><b>Voucher &amp; rooming list</b>Exportés en 1 clic</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section--sm">
+ <div class="container">
+  <div class="tldr reveal">
+   <h2>L’essentiel <small>Manage, le système de gestion commerciale de Travelife</small></h2>
+   <ul>
+    <li><b>Définition :</b> Travelife Manage est un système de gestion commerciale et opérationnelle 100 % cloud, développé à Casablanca pour les agences de voyages et les tour-opérateurs.</li>
+    <li><b>Parcours :</b> Travelife Manage couvre 9 étapes dans un seul outil : connexion, réservation, devis, commande, facture et voucher, règlement client, achat fournisseur, états et TVA.</li>
+    <li><b>Réservations :</b> Travelife Manage combine les réservations connectées (GDS et API hôtels) et les réservations offline (contrats directs, allotements, packages).</li>
+    <li><b>Documents :</b> Travelife Manage génère automatiquement devis, proformas, factures, vouchers, reçus de paiement, avoirs et rooming lists.</li>
+    <li><b>Finances :</b> Travelife Manage automatise le rapprochement bancaire, les journaux de caisse et le calcul de la TVA sur marge.</li>
+    <li><b>Écosystème :</b> Travelife Manage centralise aussi les ventes issues du site web B2C et de la plateforme de réservation B2B de l’agence.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container container--narrow center reveal">
+  <span class="eyebrow">Le logiciel</span>
+  <h2>Travelife Manage : le logiciel de gestion commerciale pour agences de <span class="serif">voyages</span></h2>
+  <p class="lead">Travelife Manage est un logiciel de gestion commerciale et opérationnelle conçu spécialement pour les agences de voyages et les tour-opérateurs.</p>
+  <p class="text-muted">Cette solution ERP 100&nbsp;% cloud centralise l’ensemble de vos processus (réservations, CRM, facturation, paiements et suivi des performances) dans une plateforme unique et intuitive. Avec Travelife, vous pilotez votre activité en temps réel, automatisez vos opérations et améliorez la rentabilité de votre agence.</p>
+  <div class="mg-pills">
+   <span>{{i:plane}} Réservations</span>
+   <span>{{i:crm}} CRM</span>
+   <span>{{i:file}} Facturation</span>
+   <span>{{i:wallet}} Paiements</span>
+   <span>{{i:chart}} Performances</span>
+  </div>
+ </div>
+</section>
+
+<section class="section section--dark mg-journey" id="parcours">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">Workflow intégré</span>
+   <h2>Le parcours opérationnel de l’agent sur <span class="serif grad-text">Travelife</span></h2>
+   <p><b style="color:#fff">Point de départ : connexion de l’utilisateur.</b> Voyez comment l’utilisateur pilote chaque étape de l’agence sans quitter sa plateforme unique et intégrée.</p>
+  </div>
+  <div class="mg-start reveal"><span>{{i:lock}} Connexion de l’utilisateur</span></div>
+  <ol class="mg-flow">
+   <li class="reveal"><div class="mg-card"><span class="n" aria-hidden="true">01</span><span class="ico">{{i:lock}}</span><h3><small>Étape 1</small>Se connecter</h3><ul><li>Accès sécurisé au portail unique</li><li>Permissions selon le profil utilisateur</li><li>Suivi de l’historique des actions du compte</li></ul></div></li>
+   <li class="reveal"><div class="mg-card"><span class="n" aria-hidden="true">02</span><span class="ico ico--o">{{i:plane}}</span><h3><small>Étape 2</small>Passer une réservation</h3><ul><li>Connexion API GDS et hôtels</li><li>Intégration du catalogue interne offline</li><li>Sélection de vols, hôtels, transferts, visas, activités, circuits…</li></ul></div></li>
+   <li class="reveal"><div class="mg-card"><span class="n" aria-hidden="true">03</span><span class="ico">{{i:file}}</span><h3><small>Étape 3</small>Créer un devis / proforma</h3><ul><li>Génération d’une proposition multi-lignes</li><li>Envoi instantané au client</li><li>Calcul automatique des marges</li></ul></div></li>
+   <li class="reveal"><div class="mg-card"><span class="n" aria-hidden="true">04</span><span class="ico ico--o">{{i:handshake}}</span><h3><small>Étape 4</small>Accepter le devis</h3><ul><li>Transformation automatique en commande ferme</li><li>Suivi centralisé CRM clients et fournisseurs</li><li>Blocage des stocks et des disponibilités</li></ul></div></li>
+   <li class="reveal"><div class="mg-card"><span class="n" aria-hidden="true">05</span><span class="ico">{{i:layers}}</span><h3><small>Étape 5</small>Extraire facture et voucher</h3><ul><li>Génération automatique de la facture client</li><li>Édition des bons d’échange (vouchers)</li><li>Extraction et export de la rooming list</li></ul></div></li>
+   <li class="reveal"><div class="mg-card"><span class="n" aria-hidden="true">06</span><span class="ico ico--o">{{i:wallet}}</span><h3><small>Étape 6</small>Ajouter un règlement client</h3><ul><li>Saisie des paiements et acomptes</li><li>Édition des reçus de paiement</li><li>Gestion des avoirs et remboursements</li></ul></div></li>
+   <li class="reveal"><div class="mg-card"><span class="n" aria-hidden="true">07</span><span class="ico">{{i:building}}</span><h3><small>Étape 7</small>Suivre les achats fournisseurs</h3><ul><li>Gestion des factures et échéances d’achat</li><li>Saisie des règlements fournisseurs</li><li>Téléchargement des bons de commande</li></ul></div></li>
+   <li class="reveal"><div class="mg-card"><span class="n" aria-hidden="true">08</span><span class="ico ico--o">{{i:chart}}</span><h3><small>Étape 8</small>Suivre les états</h3><ul><li>États de caisse, d’achats et de ventes</li><li>Rapprochement bancaire automatisé</li><li>Édition et centralisation des journaux de caisse</li></ul></div></li>
+   <li class="reveal"><div class="mg-card"><span class="n" aria-hidden="true">09</span><span class="ico">{{i:calc}}</span><h3><small>Étape 9</small>Calculer la TVA</h3><ul><li>Application des règles de TVA voyage</li><li>Calcul automatique de la TVA sur marge</li><li>Sécurisation de la conformité fiscale</li></ul></div></li>
+  </ol>
+  <div class="mg-end reveal"><span>{{i:check}} Workflow intégré, zéro rupture</span></div>
+  <p class="center mt-32 mb-0 lead" style="max-width:720px;margin-left:auto;margin-right:auto">Un flux de travail fluide et continu, accessible depuis n’importe quel appareil, pour piloter votre agence de A à Z.</p>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container split" style="align-items:start">
+  <div class="mg-sticky reveal">
+   <span class="eyebrow">Nos services</span>
+   <h2>Réduisez les tâches administratives de votre agence de <span class="serif">voyage</span></h2>
+   <p class="lead">La solution propose un processus qui vous aide à atteindre vos objectifs plus rapidement en maximisant vos résultats commerciaux.</p>
+   <div class="btn-row"><a class="btn btn--violet" href="/tarifs-logiciel-travelife/">Consultez les tarifs {{i:arrow}}</a><a class="btn btn--ghost" href="/logiciel-de-gestion-commerciale/">Fonctionnalités détaillées</a></div>
+  </div>
+  <div class="mg-list reveal reveal-d1">
+   <div><span class="ico">{{i:zap}}</span><h3>Automatisation des processus</h3><p>Déclenchez automatiquement des actions sans travail manuel en automatisant vos parcours de réservation&nbsp;!</p></div>
+   <div><span class="ico ico--o">{{i:users}}</span><h3>Communication centralisée</h3><p>Offrez une expérience personnalisée et suivez l’historique de toutes les opérations passées.</p></div>
+   <div><span class="ico">{{i:headset}}</span><h3>Mises à jour et support</h3><p>Bénéficiez d’une assistance premium et de mises à jour régulières qui vous aident à résoudre les problèmes à tout moment.</p></div>
+   <div><span class="ico ico--o">{{i:plug}}</span><h3>Redistribution des API</h3><p>Intégrez plusieurs API fournisseurs dans un seul flux : plus de 1&nbsp;500 compagnies aériennes et 500&nbsp;000 hébergements.</p></div>
+   <div><span class="ico">{{i:calc}}</span><h3>Finances et comptabilité</h3><p>Évitez les erreurs et les calculs manuels grâce à une gestion complète des comptes clients et fournisseurs.</p></div>
+   <div><span class="ico ico--o">{{i:chart}}</span><h3>Rapports</h3><p>Obtenez toutes les informations sur vos ventes, clients, fournisseurs et employés sous forme de rapports clairs et pertinents.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section section--sand">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">Vue d’ensemble</span>
+   <h2>Tout est automatisé et bien <span class="serif">centralisé</span></h2>
+   <p>Réservation, facturation, paiement et comptabilité : chaque module alimente le suivant, sans ressaisie.</p>
+  </div>
+  <div class="mg-schema reveal">
+   {{inc:workflow-hub}}
+  </div>
+ </div>
+</section>
+
+<section class="section--sm">
+ <div class="container">
+  <div class="photo-band reveal">
+   <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?auto=format&fit=crop&w=2000&q=75" alt="Voyageur détendu dans un salon d'aéroport, symbole du confort de travail apporté par Travelife Manage" loading="lazy">
+   <div class="inner">
+    <span class="eyebrow" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff">Avantages</span>
+    <h2>Un confort de travail, un gain de temps et une augmentation de revenu</h2>
+    <ul class="checklist">
+     <li>Accélérez tous vos processus : créez, publiez, gérez et vendez plus de demandes, plus facilement.</li>
+     <li>Améliorez l’efficacité et éliminez le travail manuel qui vous fait perdre du temps.</li>
+     <li>Fidélisez vos clients et construisez des relations plus solides en éliminant les erreurs et en vous concentrant sur la création d’offres créatives.</li>
+     <li>Gérez plus facilement le travail administratif et stimulez la productivité et les revenus de votre agence.</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section section--sand">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">Écosystème</span>
+   <h2>Découvrez l’écosystème <span class="serif">Travelife</span></h2>
+   <p>Travelife accompagne les agences de voyages dans leur transformation digitale avec des solutions innovantes : ERP, plateformes B2B, sites B2C et intégrations API.</p>
+  </div>
+  <div class="bento">
+   <a class="tile span-2 reveal" href="/logiciel-de-gestion-commerciale/">
+    <span class="tag">{{i:erp}} ERP Manage</span>
+    <h3>Logiciel de gestion commerciale</h3>
+    <p>Réservations, facturation, comptabilité et CRM au même endroit.</p>
+    <span class="link-arrow">Découvrir {{i:arrow}}</span>
+   </a>
+   <a class="tile tile--photo span-2 reveal reveal-d1" href="/site-internet-pour-agence-de-voyages/">
+    <img class="bg" src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=900&q=75" alt="Piscine d'hôtel de luxe au coucher du soleil, réservable sur un site B2C d'agence" loading="lazy">
+    <span class="tag">{{i:globe}} Site B2C</span>
+    <h3>Site web B2C &amp; Agent IA</h3>
+    <p>Un site de réservation en ligne connecté aux GDS et fournisseurs.</p>
+    <span class="link-arrow">Découvrir {{i:arrow}}</span>
+   </a>
+   <a class="tile tile--dark span-2 reveal reveal-d2" href="/systeme-de-reservation-b2b/">
+    <span class="tag">{{i:network}} Portail B2B</span>
+    <h3>Système de réservation B2B</h3>
+    <p>Un portail sécurisé pour votre réseau d’agences partenaires.</p>
+    <span class="link-arrow">Découvrir {{i:arrow}}</span>
+   </a>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="faq">
+ <div class="container faq-layout">
+  <div class="faq-aside reveal">
+   <span class="eyebrow">FAQ</span>
+   <h2 style="font-size:clamp(1.8rem,3vw,2.5rem)">Questions fréquentes sur le logiciel Travelife Manage</h2>
+   <p class="lead">Découvrez comment Travelife Manage centralise la gestion commerciale, les réservations et la facturation pour les agences de voyages et les tour-opérateurs.</p>
+   <div class="card" style="margin-top:28px;background:var(--sand);border-color:var(--sand-2)">
+    <h3 style="font-size:1.1rem">Envie de voir Manage en action&nbsp;?</h3>
+    <p>Démonstration gratuite et personnalisée, adaptée à votre activité.</p>
+    <div class="btn-row" style="margin-top:16px"><a class="btn btn--violet btn--sm" href="/contactez/">Demander une démo</a><a class="btn btn--ghost btn--sm" href="tel:+212521500605">{{i:phone}} (+212) 5 21 50 06 05</a></div>
+   </div>
+  </div>
+  <div class="faq reveal reveal-d1">
+   <details open><summary>1. Qu’est-ce que Travelife Manage&nbsp;?</summary><div class="answer"><p>Travelife Manage est un logiciel ERP cloud dédié aux agences de voyages et aux tour-opérateurs. Il centralise l’ensemble des processus commerciaux, opérationnels et financiers dans une plateforme unique afin de simplifier la gestion quotidienne de l’agence.</p><p>Grâce à son interface intuitive et évolutive, les équipes gèrent les réservations, les clients, les paiements et les fournisseurs depuis un seul outil.</p></div></details>
+   <details><summary>2. Quelles fonctionnalités propose Travelife Manage&nbsp;?</summary><div class="answer"><p>Travelife Manage propose une suite complète de fonctionnalités pour les agences de voyages : gestion des réservations et des dossiers clients, CRM avancé avec historique des interactions, génération automatique de devis, factures et vouchers, gestion des règlements et suivi des paiements, tableaux de bord et reporting en temps réel.</p><p>Ces fonctionnalités permettent de piloter efficacement l’activité commerciale de votre agence.</p></div></details>
+   <details><summary>3. Peut-on connecter Travelife aux GDS et API fournisseurs&nbsp;?</summary><div class="answer"><p>Oui. Travelife peut être connecté à différents GDS et fournisseurs touristiques via des API sécurisées. Ces intégrations donnent accès à une large offre de vols, hôtels, activités et services touristiques directement depuis la plateforme.</p><p>Les réservations sont automatiquement synchronisées avec votre système de gestion pour éviter les doubles saisies.</p></div></details>
+   <details><summary>4. Le logiciel permet-il de gérer les réservations offline&nbsp;?</summary><div class="answer"><p>Oui. Travelife gère à la fois les réservations connectées via API et les réservations offline. Vous pouvez intégrer vos contrats directs avec les hôtels, vos allotements aériens ou vos packages personnalisés.</p><p>Cette flexibilité permet de gérer tous les types de produits touristiques dans un seul outil.</p></div></details>
+   <details><summary>5. Comment Travelife améliore-t-il la gestion commerciale d’une agence&nbsp;?</summary><div class="answer"><p>Travelife automatise les processus commerciaux : génération de devis, transformation en commande, facturation et suivi des paiements. Le logiciel permet aussi de suivre les performances par produit, canal de vente ou vendeur grâce à des tableaux de bord dynamiques.</p><p>Les agences peuvent ainsi prendre des décisions stratégiques basées sur des données fiables et actualisées.</p></div></details>
+   <details><summary>6. Travelife est-il compatible avec les plateformes B2B et B2C&nbsp;?</summary><div class="answer"><p>Oui, il agit comme le cœur de votre écosystème digital. Il centralise les réservations provenant de votre plateforme B2B, de votre site web B2C ou de vos ventes directes en agence.</p><p>Toutes les réservations suivent ensuite un workflow unifié : validation, facturation, règlement et suivi des commissions.</p></div></details>
+   <details><summary>7. Comment obtenir une démonstration du logiciel Travelife&nbsp;?</summary><div class="answer"><p>Pour découvrir toutes nos fonctionnalités, vous pouvez demander une démonstration personnalisée via notre <a href="/contactez/">formulaire de contact</a>. Notre équipe analysera votre activité et vous présentera comment le logiciel peut optimiser la gestion de votre agence de voyages.</p><p>La démonstration est gratuite et vous permet de comprendre concrètement comment digitaliser vos opérations avec Travelife.</p></div></details>
+   <details><summary>8. Quelles sont les étapes d’un dossier voyage dans Travelife Manage&nbsp;?</summary><div class="answer"><p>Un dossier suit 9 étapes dans Travelife Manage, sans changer d’outil : l’agent se connecte avec un profil sécurisé, passe la réservation (GDS, API hôtels ou catalogue offline), crée un devis ou une proforma multi-lignes avec calcul automatique des marges, puis le transforme en commande ferme dès l’acceptation du client.</p><p>Il extrait ensuite la facture et le voucher, enregistre le règlement client (acomptes, reçus, avoirs), suit l’achat fournisseur et ses échéances, consulte les états de caisse et le rapprochement bancaire, et laisse le logiciel calculer la TVA sur marge.</p></div></details>
+   <details><summary>9. Travelife Manage génère-t-il les vouchers et les rooming lists&nbsp;?</summary><div class="answer"><p>Oui. Une fois le devis accepté, Travelife Manage génère automatiquement la facture client, édite les bons d’échange (vouchers) destinés aux prestataires et permet d’extraire et d’exporter la rooming list du dossier.</p><p>Les informations des passagers ne sont saisies qu’une seule fois, y compris pour les groupes : elles sont reprises dans tous les documents. Vous gagnez du temps sur les dossiers complexes comme les circuits ou les programmes Omra.</p></div></details>
+   <details><summary>10. Combien coûte le système de gestion commerciale Travelife Manage&nbsp;?</summary><div class="answer"><p>Travelife Manage coûte à partir de 199 € par mois (formule ERP Core, 5 utilisateurs inclus, frais de mise en place de 1 500 €). La formule ERP Business à 399 € / mois ajoute la console d’administration, les packages, les contrats hôteliers, les allotements et la rooming list ; la formule ERP Connect à 599 € / mois ajoute le moteur de réservation, la connexion GDS / NDC et 2 API fournisseurs.</p><p>Aucune commission n’est prélevée sur vos ventes, et le logiciel est finançable jusqu’à 90 % par GO SIYAHA au Maroc. Voir les <a href="/tarifs-logiciel-travelife/">tarifs détaillés</a>.</p></div></details>
+   <details><summary>11. Peut-on utiliser Travelife Manage à distance ou sur tablette&nbsp;?</summary><div class="answer"><p>Oui. Travelife Manage est une solution 100 % cloud accessible depuis un navigateur web, sur ordinateur de bureau, ordinateur portable ou tablette. Vos équipes peuvent travailler depuis l’agence, depuis la maison ou en déplacement avec le même outil et les mêmes données en temps réel.</p><p>Il n’y a aucune installation ni sauvegarde à gérer : en cas de panne d’un ordinateur, il suffit de se reconnecter depuis un autre appareil. Les mises à jour sont régulières et l’assistance technique est incluse.</p></div></details>
+  </div>
+ </div>
+</section>
+
+{{inc:cta}}

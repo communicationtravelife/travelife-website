@@ -1,0 +1,318 @@
+<!--META {"path":"site-web-pour-agence-de-voyages/","nav":"produits","dark":true,"title":"Solution de site web pour agence de voyages | B2C | Travelife","desc":"Créez votre site web pour agence de voyages avec Travelife : réservation en ligne, gestion des demandes, paiement sécurisé et design moderne adapté au tourisme.","canonical":"https://travelife.ma/site-web-pour-agence-de-voyages/","og":"https://travelife.ma/wp-content/uploads/2022/08/s-1.png","crumbs":[["Site Web pour Agence de voyages","/site-web-pour-agence-de-voyages/"]]} -->
+<style>
+.swp-hero{padding-bottom:0}
+.swp-hero .breadcrumb{justify-content:center}
+.swp-hero h1{max-width:980px;margin:0 auto 18px}
+.swp-sub{color:#fff;font-size:clamp(1.15rem,1.9vw,1.45rem);font-weight:600;margin-bottom:18px}
+.swp-sub span{color:var(--orange-2)}
+.swp-hero .lead{margin:0 auto}
+.swp-hero .hero-stage{max-width:1080px;margin-left:auto;margin-right:auto}
+.swp-engine{display:grid;grid-template-columns:200px 1fr;gap:14px}
+.swp-filter{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;font-size:.72rem;display:flex;flex-direction:column;gap:12px}
+.swp-filter h6{margin:0;font-family:var(--f-body);font-size:.74rem;color:var(--ink);letter-spacing:0}
+.swp-filter label{display:flex;align-items:center;gap:8px;color:var(--text)}
+.swp-filter label i{width:14px;height:14px;border-radius:4px;border:1.5px solid var(--line-2);display:block;flex:none}
+.swp-filter label i.on{background:var(--violet);border-color:var(--violet)}
+.swp-range{height:4px;border-radius:4px;background:linear-gradient(90deg,var(--line) 0 15%,var(--violet) 15% 70%,var(--line) 70%);position:relative;margin:6px 0 2px}
+.swp-hotels{display:flex;flex-direction:column;gap:10px}
+.swp-hotel{display:grid;grid-template-columns:120px 1fr auto;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px;font-size:.72rem}
+.swp-hotel .ph{height:78px;border-radius:9px;background-size:cover;background-position:center}
+.swp-hotel b{display:block;font-family:var(--f-display);font-size:.95rem;color:var(--ink)}
+.swp-hotel .stars{color:var(--orange);letter-spacing:2px;font-size:.7rem}
+.swp-hotel small{color:var(--muted)}
+.swp-hotel .pr{text-align:right;padding-right:8px}
+.swp-hotel .pr b{font-size:1.05rem}
+.swp-hotel .go{display:inline-block;margin-top:6px;background:var(--orange);color:#fff;font-weight:600;border-radius:8px;padding:6px 12px}
+.swp-collage{position:relative;padding:0 0 70px 0}
+.swp-collage .media--photo img{aspect-ratio:5/4}
+.swp-collage .swp-cap{position:absolute;right:-28px;bottom:0;width:62%;border-radius:18px;overflow:hidden;border:6px solid #fff;box-shadow:var(--sh-3);background:#fff}
+.swp-collage .swp-cap img{display:block;width:100%}
+.swp-journey{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative;counter-reset:j}
+.swp-journey::before{content:"";position:absolute;left:12%;right:12%;top:34px;height:2px;background:linear-gradient(90deg,var(--violet-2),var(--orange));opacity:.6}
+.swp-step{position:relative;text-align:center;padding:0 10px}
+.swp-step .dot{width:68px;height:68px;margin:0 auto 22px;border-radius:20px;display:grid;place-items:center;background:var(--ink-2);border:1px solid rgba(255,255,255,.14);color:#fff;box-shadow:0 0 0 8px var(--ink)}
+.swp-step .dot svg{width:26px;height:26px}
+.swp-step:nth-child(even) .dot{color:var(--orange-2)}
+.swp-step small{display:block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--violet-3);margin-bottom:8px;font-weight:600}
+.swp-step h3{font-size:1.15rem;margin-bottom:8px}
+.swp-step p{font-size:.94rem;color:#A9A4CC;margin:0}
+.swp-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.swp-pills span{font-size:.8rem;font-weight:600;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#fff}
+.swp-serp{margin-top:auto;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:.78rem;box-shadow:var(--sh-2)}
+.swp-serp small{color:#1a7f37}
+.swp-serp b{display:block;color:#1a0dab;font-weight:500;font-size:.92rem;margin:2px 0}
+.swp-serp span{color:var(--muted)}
+.swp-table th:not(:first-child),.swp-table td:not(:first-child){text-align:center;width:22%}
+.swp-table td:first-child{color:var(--ink)}
+.swp-table thead th{padding:22px 20px;vertical-align:middle;background:#fff}
+.swp-table thead th b{display:block;font-size:1.2rem}
+.swp-table thead th small{font-family:var(--f-body);font-weight:400;color:var(--muted);font-size:.8rem}
+.swp-table thead th.prem{background:var(--ink);color:#fff}
+.swp-table thead th.prem small{color:#A9A4CC}
+.swp-table td.prem{background:#FAF8FF}
+.swp-table .y{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--violet-50);color:var(--violet)}
+.swp-table .y svg{width:14px;height:14px}
+.swp-table td.prem .y{background:var(--orange-50);color:var(--orange)}
+.swp-table .n{color:var(--line-2);font-weight:700}
+.swp-table .plus{font-size:.85rem;font-weight:600;color:var(--orange)}
+.swp-table tbody tr.grp td{background:var(--sand);font-family:var(--f-display);font-weight:600;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:12px 20px}
+.swp-table tfoot td{padding:22px 20px;text-align:center;border-top:1px solid var(--line)}
+.swp-sec{display:grid;gap:10px}
+.swp-sec .bk{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.swp-sec .bk b{font-size:.92rem;white-space:normal}
+.swp-sec .bk small{font-size:.8rem}
+.swp-sec .bk .t{width:38px;height:38px;border-radius:11px}
+.swp-sec .bk .t svg{width:18px;height:18px}
+@media (max-width:1080px){.swp-journey{grid-template-columns:1fr 1fr;row-gap:44px}.swp-journey::before{display:none}}
+@media (max-width:960px){.swp-collage .swp-cap{right:0}}
+.swp-secwrap{padding:44px}
+@media (max-width:640px){.swp-secwrap{padding:16px}.swp-sec .bk .st{display:none}.swp-table{table-layout:fixed;min-width:0}.swp-table th:first-child,.swp-table td:first-child{width:44%}.swp-table th:not(:first-child),.swp-table td:not(:first-child){width:28%}.swp-table tbody tr.grp td{padding:10px}.swp-table tfoot .btn{padding:9px 10px;font-size:.78rem;width:100%}.swp-table tfoot td{padding:14px 6px}.swp-table .plus{font-size:.78rem}.swp-engine{grid-template-columns:1fr}.swp-filter{display:none}.swp-hotel{grid-template-columns:84px 1fr}.swp-hotel .pr{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;text-align:left;padding:0 4px 4px}.swp-hotel .go{margin:0}.swp-hotel .ph{height:64px}.swp-journey{grid-template-columns:1fr;row-gap:36px}.swp-collage{padding-bottom:40px}.swp-collage .swp-cap{width:70%;border-width:4px}.swp-table th,.swp-table td{padding:12px 10px;font-size:.85rem}.swp-table thead th b{font-size:1rem}.swp-table thead th small{display:none}}
+</style>
+
+<section class="page-hero page-hero--dark swp-hero">
+ <div class="container hero-center">
+  <ol class="breadcrumb"><li><a href="/">Accueil</a></li><li>Site Web pour agence de voyages</li></ol>
+  <span class="eyebrow">Plateforme B2C · 24 h/24</span>
+  <h1>Création de plateforme de réservation pour <span class="serif grad-text">agence de voyage</span></h1>
+  <h2 class="swp-sub">Tout est automatisé <span>et</span> bien centralisé</h2>
+  <p class="lead">Le site web pour agence de voyages (plateforme B2C) est la solution idéale pour proposer à vos clients directs de réserver en ligne 24&nbsp;h/24. Ce système de réservation permet aux agences de vendre leurs produits directement à des millions de touristes et de voyageurs, depuis n’importe où et à tout moment.</p>
+  <div class="btn-row">
+   <a class="btn btn--primary" href="#fonctionnalites">Voir toutes les fonctionnalités {{i:arrow}}</a>
+   <a class="btn btn--ghost" href="/contactez/">Demander un devis</a>
+  </div>
+  <div class="hero-stage">
+   <div class="mock" role="img" aria-label="Moteur de réservation B2C Travelife : recherche d’hôtels avec filtres et disponibilités en temps réel">
+    <div class="mock-bar"><i></i><i></i><i></i><div class="mock-url">{{i:lock}} www.votre-agence.ma/hotels</div></div>
+    <div class="app-main">
+     <div class="site-search" style="box-shadow:none;border:1px solid var(--line)"><div><small>Destination</small><b>Marrakech, Maroc</b></div><div><small>Dates</small><b>14 – 18 nov.</b></div><div><small>Voyageurs</small><b>2 adultes · 1 chambre</b></div><div class="go">Rechercher</div></div>
+     <div class="swp-engine">
+      <div class="swp-filter">
+       <h6>Budget / nuit</h6>
+       <div class="swp-range"></div>
+       <h6>Catégorie</h6>
+       <label><i class="on"></i>5 étoiles</label><label><i class="on"></i>4 étoiles</label><label><i></i>3 étoiles</label>
+       <h6>Type</h6>
+       <label><i class="on"></i>Riad</label><label><i></i>Hôtel</label><label><i></i>Resort &amp; spa</label>
+      </div>
+      <div class="swp-hotels">
+       <div class="swp-hotel"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=400&q=60)"></div><div><b>Hôtel Jardins de la Palmeraie</b><span class="stars">★★★★★</span><br><small>Palmeraie · Petit déjeuner inclus</small> <span class="st ok">Disponible</span></div><div class="pr"><small>4 nuits dès</small><b>6 240 MAD</b><span class="go">Réserver</span></div></div>
+       <div class="swp-hotel"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1549140600-78c9b8275e9d?auto=format&fit=crop&w=400&q=60)"></div><div><b>Riad des Arcades</b><span class="stars">★★★★</span><br><small>Médina · Terrasse &amp; hammam</small> <span class="st ok">Disponible</span></div><div class="pr"><small>4 nuits dès</small><b>3 980 MAD</b><span class="go">Réserver</span></div></div>
+       <div class="swp-hotel"><div class="ph" style="background-image:url(https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=400&q=60)"></div><div><b>Hôtel Terrasse Hivernage</b><span class="stars">★★★★</span><br><small>Hivernage · Piscine</small> <span class="st wait">2 chambres restantes</span></div><div class="pr"><small>4 nuits dès</small><b>4 520 MAD</b><span class="go">Réserver</span></div></div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="hero-floats">
+    <div class="chip-float cf-1" style="top:210px"><span class="ico ico--ok">{{i:check}}</span><span><b>Réservation confirmée</b>Paiement en ligne · 24 h/24</span></div>
+    <div class="chip-float cf-2" style="top:-26px"><span class="ico ico--o">{{i:tag}}</span><span><b>Majoration appliquée</b>Vos règles, automatiquement</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section--sm">
+ <div class="container">
+  <div class="tldr reveal">
+   <h2>L’essentiel <small>Plateforme de réservation B2C</small></h2>
+   <ul>
+    <li><b>Principe :</b> le site web Travelife pour agence de voyages est une plateforme B2C qui permet aux clients directs de réserver en ligne 24 h/24.</li>
+    <li><b>Moteur :</b> le moteur de réservation B2C Travelife cherche les produits, vérifie les disponibilités et réserve vols, hôtels, voyages et activités dans une seule interface.</li>
+    <li><b>Rentabilité :</b> l’agence garde un contrôle absolu sur ses majorations et commissions, appliquées automatiquement aux tarifs affichés.</li>
+    <li><b>Offre standard :</b> Travelife inclut paiement en ligne, site multilingue et multi-devises, blog, SEO natif, HTTPS et structure conforme au RGPD.</li>
+    <li><b>Offre premium :</b> Travelife ajoute plusieurs connexions GDS, un design sur mesure, les modules transfert et ferry, l’API SMS et les packages dynamiques.</li>
+    <li><b>Back office :</b> chaque demande et réservation du site web Travelife est enregistrée automatiquement dans le back office de l’agence.</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container split split--reverse">
+  <div class="swp-collage reveal">
+   <div class="media media--photo"><img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=75" alt="Resort tropical avec piscine, réservable en ligne depuis le site B2C de l’agence" loading="lazy"></div>
+   <div class="swp-cap"><img src="https://travelife.ma/wp-content/uploads/2022/08/s-1.png" alt="Interface du moteur de réservation B2C Travelife" loading="lazy" width="640" height="480"></div>
+  </div>
+  <div class="reveal reveal-d1">
+   <span class="eyebrow">Moteur de réservation</span>
+   <h2>Une meilleure expérience grâce au moteur de réservation <span class="serif">B2C</span></h2>
+   <p class="lead">En un clic, mettez en ligne vos nouveaux voyages et tenez vos clients informés de vos propositions de séjours grâce au moteur de réservation B2C.</p>
+   <ul class="checklist">
+    <li>Un contrôle absolu sur les majorations et les commissions</li>
+    <li>Des mises en page personnalisées selon vos besoins</li>
+    <li>Automatisation complète du processus de vente</li>
+    <li>Gestion directe des fournisseurs</li>
+    <li>Gestion totale des réservations</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="section section--dark">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">Le meilleur système</span>
+   <h2>Meilleur système pour <span class="serif grad-text">agences de voyages</span></h2>
+   <p>Le moteur de réservation B2C (B2C Booking Engine) permet de chercher les produits, vérifier les disponibilités et réserver aux meilleurs tarifs pour la période souhaitée, le tout via une interface simple, personnalisée et optimisée qui facilite l’expérience utilisateur.</p>
+  </div>
+  <div class="swp-journey">
+   <div class="swp-step reveal"><div class="dot">{{i:search}}</div><small>Étape 1</small><h3>Chercher</h3><p>Vols, hôtels, voyages et activités dans un seul moteur, avec filtres par pays, ville, type et date.</p></div>
+   <div class="swp-step reveal reveal-d1"><div class="dot">{{i:calendar}}</div><small>Étape 2</small><h3>Vérifier les disponibilités</h3><p>Des disponibilités en temps réel issues des GDS et de vos contrats directs.</p></div>
+   <div class="swp-step reveal reveal-d2"><div class="dot">{{i:tag}}</div><small>Étape 3</small><h3>Meilleurs tarifs</h3><p>Vos majorations et commissions appliquées automatiquement, pour la période souhaitée.</p></div>
+   <div class="swp-step reveal reveal-d3"><div class="dot">{{i:wallet}}</div><small>Étape 4</small><h3>Réserver &amp; payer</h3><p>Paiement en ligne sécurisé et réservation enregistrée directement dans votre back office.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="fonctionnalites">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">Fonctionnalités</span>
+   <h2>Travelife, le système de réservation en ligne le plus <span class="serif">puissant</span> B2B|B2C</h2>
+   <p>Notre solution de réservation comprend toutes les fonctionnalités pour répondre aux besoins de votre agence de voyage.</p>
+  </div>
+  <div class="bento">
+   <div class="tile tile--dark span-4 reveal">
+    <span class="tag">{{i:plug}} Connectivité</span>
+    <h3>Connexion directe avec un contenu dynamique des GDS</h3>
+    <p>Vos clients accèdent à plus de 1&nbsp;500 compagnies aériennes et 500&nbsp;000 hébergements, en temps réel, depuis votre propre site.</p>
+    <div class="swp-pills"><span>Amadeus</span><span>Sabre</span><span>Travelport</span><span>Hotelbeds</span><span>WebBeds</span><span>Travelfusion</span><span>CMI</span><span>+ vos contrats directs</span></div>
+   </div>
+   <div class="tile tile--sand span-2 reveal reveal-d1">
+    <span class="tag">{{i:file}} Back office</span>
+    <h3>Une saisie simple de votre contenu de voyage</h3>
+    <p>Voyages, circuits, destinations et photos : la saisie est mise en forme automatiquement sur votre site.</p>
+   </div>
+   <div class="tile tile--photo span-2 reveal">
+    <img class="bg" src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=900&q=75" alt="Marrakech, la Koutoubia et l’Atlas enneigé, visuel de destination sur un site d’agence" loading="lazy">
+    <span class="tag">{{i:palette}} Design</span>
+    <h3>Un design élégant et moderne qui valorise vos voyages</h3>
+    <p>Des modèles professionnels et personnalisables.</p>
+   </div>
+   <div class="tile span-4 reveal reveal-d1">
+    <span class="tag">{{i:crm}} Demandes &amp; réservations</span>
+    <h3>Gestion simplifiée de vos demandes et réservations</h3>
+    <p>Fini les tableaux Excel : chaque demande et chaque réservation du site arrive automatiquement dans votre back office, avec notes de suivi client.</p>
+    <div class="panel" style="margin-top:auto;box-shadow:var(--sh-2)" role="img" aria-label="Exemple de demandes et réservations reçues dans le back office">
+     <div class="bk"><span class="t">{{i:plane}}</span><div><b>Vol Casablanca → Istanbul · 3 pax</b><small>Réservation en ligne · il y a 4 min</small></div><span class="st ok">Payée</span></div>
+     <div class="bk"><span class="t o">{{i:mail}}</span><div><b>Demande de devis · Circuit désert de Merzouga</b><small>Formulaire du site · il y a 18 min</small></div><span class="st new">Nouvelle</span></div>
+     <div class="bk"><span class="t g">{{i:building}}</span><div><b>Hôtel 4★ Agadir · 5 nuits</b><small>Réservation en ligne · il y a 1 h</small></div><span class="st wait">À confirmer</span></div>
+    </div>
+   </div>
+   <div class="tile tile--violet span-2 reveal">
+    <span class="tag">{{i:smartphone}} Responsive</span>
+    <h3>Une navigation fluide et performante sur tous les smartphones</h3>
+    <p>Un site qui s’adapte à toutes les tailles d’écran, quel que soit l’appareil.</p>
+   </div>
+   <div class="tile span-2 reveal reveal-d1">
+    <span class="tag">{{i:search}} SEO</span>
+    <h3>Un bon référencement naturel</h3>
+    <p>Code optimisé, liens croisés, micro-données : le SEO est intégré nativement.</p>
+    <div class="swp-serp" aria-hidden="true"><small>www.votre-agence.ma › circuits</small><b>Circuit Marrakech &amp; Atlas · 5 jours</b><span>Réservez en ligne votre circuit…</span></div>
+   </div>
+   <div class="tile tile--sand span-2 reveal reveal-d2">
+    <span class="tag">{{i:shield}} Sérénité</span>
+    <h3>Garantie et maintenance d’1 an</h3>
+    <p>Garantie, maintenance et assistance pendant un an pour résoudre tout problème.</p>
+    <div style="margin-top:auto;font-family:var(--f-display);font-size:4rem;font-weight:700;letter-spacing:-.05em;line-height:1;color:var(--ink)">1 an</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section section--sand" id="packages">
+ <div class="container">
+  <div class="section-head reveal">
+   <span class="eyebrow">Nos packages</span>
+   <h2>Création du site internet pour <span class="serif">agences de voyages</span></h2>
+   <p>Nos packages comprennent les fonctionnalités suivantes. Choisissez l’offre standard ou passez à l’offre premium pour plus de connexions et de modules.</p>
+  </div>
+  <div class="table-wrap reveal" style="box-shadow:var(--sh-2)">
+   <table class="swp-table">
+    <thead><tr><th>Fonctionnalités incluses</th><th><b>Offre standard</b><small>Tout le nécessaire pour vendre en ligne</small></th><th class="prem"><b>Offre premium</b><small>Tout le standard, plus…</small></th></tr></thead>
+    <tbody>
+     <tr class="grp"><td colspan="3">Connexions &amp; modules</td></tr>
+     <tr><td>Connexion avec les GDS</td><td>Principaux GDS<br><small class="text-muted">1 vol, 1 hôtel</small></td><td class="prem"><span class="plus">Plusieurs connexions</span></td></tr>
+     <tr><td>Modules de réservation</td><td>Vol, hôtel, voyage, activité</td><td class="prem"><span class="plus">+ transfert, ferry</span></td></tr>
+     <tr><td>Intégration de packages dynamiques</td><td><span class="n">—</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Intégration API SMS</td><td><span class="n">—</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Paiement en ligne</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Site web multilingue et multi-devises</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr class="grp"><td colspan="3">Design &amp; contenu</td></tr>
+     <tr><td>Design du site</td><td>Modèle de site web personnalisable</td><td class="prem"><span class="plus">Design sur mesure</span></td></tr>
+     <tr><td>Design responsive adapté aux smartphones</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Saisie et mise en forme automatique</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Filtres de recherche de voyage (pays, ville, type, date…)</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Géolocalisation dynamique des itinéraires sur Google Maps</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Intégration vidéo YouTube</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Espace blog</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Connexion avec les réseaux sociaux et module de partage</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr class="grp"><td colspan="3">Gestion, SEO &amp; sécurité</td></tr>
+     <tr><td>Gestionnaire back-office pour le suivi des réservations</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Création de notes pour le suivi client</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Optimisation SEO native</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Site sécurisé HTTPS et structure conforme au RGPD</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr class="grp"><td colspan="3">Accompagnement</td></tr>
+     <tr><td>Garantie et maintenance d’1 an</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Aide à la prise en main des outils</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+     <tr><td>Site testé et approuvé par des experts du tourisme</td><td><span class="y">{{i:check}}</span></td><td class="prem"><span class="y">{{i:check}}</span></td></tr>
+    </tbody>
+    <tfoot><tr><td></td><td><a class="btn btn--ghost btn--sm" href="/contactez/">Demander un devis</a></td><td class="prem"><a class="btn btn--primary btn--sm" href="/contactez/">Demander un devis</a></td></tr></tfoot>
+   </table>
+  </div>
+  <p class="center mt-32 mb-0">Vous cherchez une offre clé en main livrée en 2 semaines&nbsp;? Découvrez notre <a href="/site-internet-pour-agence-de-voyages/">création de site internet B2C</a>.</p>
+ </div>
+</section>
+
+<section class="section">
+ <div class="container split">
+  <div class="reveal">
+   <span class="eyebrow">Sécurité</span>
+   <h2>Notre priorité est la sécurité de <span class="serif">tous nos clients</span>&nbsp;!</h2>
+   <p class="lead">Notre solution logicielle de voyage assure une sécurité totale dans la gestion des données de tous nos clients et permet de réaliser des transactions en toute confiance.</p>
+   <ul class="checklist">
+    <li>Une protection optimale des données</li>
+    <li>Respect de la confidentialité des informations</li>
+   </ul>
+   <h3 style="margin-top:28px">Un respect des normes</h3>
+   <p class="mb-0 text-muted">Protocole HTTPS, conformité à la réglementation européenne sur la protection des données (RGPD) et paiements en ligne sécurisés.</p>
+  </div>
+  <div class="reveal reveal-d1" style="position:relative">
+   <div class="ftab-panels swp-secwrap" style="min-height:0">
+    <div class="swp-sec" role="img" aria-label="Contrôles de sécurité du site web de l’agence">
+     <div class="bk"><span class="t g">{{i:lock}}</span><div><b>Certificat HTTPS actif</b><small>Toutes les pages et le tunnel de paiement chiffrés</small></div><span class="st ok">Actif</span></div>
+     <div class="bk"><span class="t">{{i:shield}}</span><div><b>Structure conforme au RGPD</b><small>Consentements et données personnelles protégés</small></div><span class="st ok">Conforme</span></div>
+     <div class="bk"><span class="t o">{{i:wallet}}</span><div><b>Paiement en ligne sécurisé</b><small>Passerelle bancaire certifiée (ex. CMI)</small></div><span class="st ok">Sécurisé</span></div>
+     <div class="bk"><span class="t">{{i:users}}</span><div><b>Accès au back office par rôles</b><small>Chaque collaborateur voit ce qu’il doit voir</small></div><span class="st new">Contrôlé</span></div>
+     <div class="bk"><span class="t g">{{i:cloud}}</span><div><b>Sauvegardes régulières</b><small>Hébergement cloud sécurisé</small></div><span class="st ok">À jour</span></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section section--sand" id="faq">
+ <div class="container faq-layout">
+  <div class="faq-aside reveal">
+   <span class="eyebrow">FAQ</span>
+   <h2>Site web pour agence de voyages&nbsp;: questions fréquentes</h2>
+   <p class="lead">Réservation en ligne, paiement, marges, langues et offres&nbsp;: les réponses sur notre plateforme B2C.</p>
+   <div class="card" style="margin-top:28px">
+    <h3 style="font-size:1.1rem">Un projet de plateforme B2C&nbsp;?</h3>
+    <p>Recevez un devis adapté à vos connexions et à vos modules.</p>
+    <div class="btn-row" style="margin-top:16px"><a class="btn btn--violet btn--sm" href="/contactez/">Demander un devis</a><a class="btn btn--ghost btn--sm" href="mailto:contact@travelife.ma">{{i:mail}} contact@travelife.ma</a></div>
+   </div>
+  </div>
+  <div class="reveal reveal-d1">
+   <div class="faq">
+    <details open><summary>Qu’est-ce qu’un site web de réservation B2C pour agence de voyages&nbsp;?</summary><div class="answer"><p>C’est un site sur lequel vos clients directs (particuliers, voyageurs) recherchent, comparent et réservent eux-mêmes leurs voyages, sans passer par un conseiller. Avec Travelife, le site web de l’agence intègre un moteur de réservation B2C qui interroge les GDS, vos fournisseurs et vos contrats directs pour afficher vols, hôtels, voyages et activités avec leurs disponibilités. L’agence vend ainsi 24&nbsp;h/24, depuis n’importe quel endroit, à des millions de touristes et de voyageurs, pendant que les réservations remontent automatiquement dans son back office.</p></div></details>
+    <details><summary>Mes clients peuvent-ils réserver et payer en ligne 24 h/24 sur le site web de mon agence&nbsp;?</summary><div class="answer"><p>Oui. Le paiement en ligne fait partie de l’offre standard du site web Travelife. Le site se connecte à des passerelles de paiement sécurisées, comme le CMI au Maroc, et vous paramétrez vos règles d’encaissement&nbsp;: paiement intégral à l’achat, acompte en ligne avec gestion du solde ou simple demande de devis. Le tunnel de réservation est chiffré en HTTPS et la structure du site est conforme au RGPD. Chaque réservation payée est enregistrée immédiatement dans votre back office, de jour comme de nuit.</p></div></details>
+    <details><summary>Comment fixer mes marges et commissions sur les ventes du site web&nbsp;?</summary><div class="answer"><p>Vous gardez un contrôle absolu sur vos majorations et vos commissions. Les règles que vous définissez dans Travelife s’appliquent automatiquement aux tarifs remontés par les GDS et les fournisseurs avant leur affichage sur votre site web, ce qui automatise entièrement le processus de vente tout en protégeant votre rentabilité. De son côté, Travelife ne prélève aucune commission sur le chiffre d’affaires réalisé via votre site B2C&nbsp;: vous payez un abonnement fixe, ce qui rend votre budget prévisible.</p></div></details>
+    <details><summary>Le site web de mon agence de voyages est-il multilingue et multi-devises&nbsp;?</summary><div class="answer"><p>Oui, dès l’offre standard. Le site web Travelife est multilingue et multi-devises, ce qui permet de s’adresser aussi bien à la clientèle locale qu’aux voyageurs étrangers. Il comprend également des filtres de recherche de voyage (pays, ville, type, date…), la géolocalisation dynamique des itinéraires sur Google Maps, l’intégration de vidéos YouTube, la connexion aux réseaux sociaux avec module de partage et un espace blog pour enrichir votre contenu et votre référencement.</p></div></details>
+    <details><summary>Quelle est la différence entre l’offre standard et l’offre premium du site web&nbsp;?</summary><div class="answer"><p>L’offre standard contient tout le nécessaire pour vendre en ligne&nbsp;: connexion aux principaux GDS (1 vol, 1 hôtel), modèle de site personnalisable, modules vol, hôtel, voyage et activité, paiement en ligne, back office de suivi des réservations, SEO natif et 1 an de garantie et de maintenance. L’offre premium ajoute plusieurs connexions GDS, un design sur mesure, les modules transfert et ferry, l’intégration d’une API SMS et les packages dynamiques. Elle convient aux agences qui vendent un catalogue large et composé.</p></div></details>
+    <details><summary>Les réservations du site web arrivent-elles directement dans mon back office&nbsp;?</summary><div class="answer"><p>Oui. Chaque demande de devis et chaque réservation effectuée sur le site web est automatiquement enregistrée dans le gestionnaire back-office Travelife. Vos équipes n’ont plus à tenir de tableaux Excel ni à ressaisir les dossiers&nbsp;: elles suivent les réservations, gèrent directement les fournisseurs et ajoutent des notes de suivi client depuis une seule interface. L’accès au back office se fait par rôles, pour que chaque collaborateur voie les informations qui le concernent.</p></div></details>
+   </div>
+  </div>
+ </div>
+</section>
+
+{{inc:cta}}
