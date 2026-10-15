@@ -1,5 +1,2 @@
-__pycache__/
-*.pyc
-gen/
-.DS_Store
 Thumbs.db
+.DS_Store
