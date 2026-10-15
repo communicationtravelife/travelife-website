@@ -48,7 +48,7 @@
 
   // Formulaires : envoi vers Google Sheets + e-mail (script Google Apps Script)
   // Collez ici l'URL de déploiement du script (https://script.google.com/macros/s/.../exec)
-  var FORM_ENDPOINT = '';
+  var FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzBEZi2ivHfXmf9bEHFmDu2AFdQ-G_EFisb_AZmSQYC4x4AA7PJHpqkf08nJ6QJM_HW/exec';
   var FORM_MSG = {
     fr:{sending:'Envoi en cours…', error:'L’envoi a échoué. Merci de réessayer ou de nous écrire à contact@travelife.ma.'},
     en:{sending:'Sending…', error:'Sending failed. Please try again or email us at contact@travelife.ma.'},
