@@ -46,12 +46,34 @@
     });
   });
 
-  // Formulaires : aperçu local (pas d'envoi réel)
+  // Formulaires : envoi vers Google Sheets + e-mail (script Google Apps Script)
+  // Collez ici l'URL de déploiement du script (https://script.google.com/macros/s/.../exec)
+  var FORM_ENDPOINT = '';
+  var FORM_MSG = {
+    fr:{sending:'Envoi en cours…', error:'L’envoi a échoué. Merci de réessayer ou de nous écrire à contact@travelife.ma.'},
+    en:{sending:'Sending…', error:'Sending failed. Please try again or email us at contact@travelife.ma.'},
+    es:{sending:'Enviando…', error:'No se pudo enviar. Inténtelo de nuevo o escríbanos a contact@travelife.ma.'},
+    ar:{sending:'جارٍ الإرسال…', error:'تعذّر الإرسال. يرجى المحاولة مرة أخرى أو مراسلتنا على contact@travelife.ma.'}
+  };
   document.querySelectorAll('form[data-demo]').forEach(function(f){
     f.addEventListener('submit',function(e){
       e.preventDefault();
-      var ok=f.querySelector('.form-success'); if(ok){ ok.style.display='block'; }
-      f.reset();
+      var lang=(document.documentElement.lang||'fr').slice(0,2), m=FORM_MSG[lang]||FORM_MSG.fr;
+      var ok=f.querySelector('.form-success'), err=f.querySelector('.form-error'), btn=f.querySelector('[type=submit]');
+      if(err) err.style.display='none';
+      var data=new URLSearchParams(new FormData(f));
+      if(data.get('website')){ if(ok) ok.style.display='block'; f.reset(); return; } // robot
+      data.append('Formulaire', f.getAttribute('data-form')||document.title);
+      data.append('Langue', lang.toUpperCase());
+      data.append('Page', location.href);
+      var done=function(){ if(ok) ok.style.display='block'; f.reset(); if(btn){btn.disabled=false; btn.innerHTML=btn.dataset.label;} };
+      if(!FORM_ENDPOINT){ done(); return; }
+      if(btn){ btn.dataset.label=btn.innerHTML; btn.disabled=true; btn.textContent=m.sending; }
+      fetch(FORM_ENDPOINT,{method:'POST',mode:'no-cors',body:data}).then(done).catch(function(){
+        if(btn){btn.disabled=false; btn.innerHTML=btn.dataset.label;}
+        if(!err){ err=document.createElement('div'); err.className='form-error'; err.setAttribute('role','alert'); (ok||f.lastElementChild).insertAdjacentElement('afterend',err); }
+        err.textContent=m.error; err.style.display='block';
+      });
     });
   });
 

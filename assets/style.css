@@ -1239,3 +1239,8 @@ img.is-zoomable{cursor:zoom-in}
 .prose .video-link span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--orange);color:#fff;padding:12px 20px;border-radius:999px;font-weight:600}
 .prose .faq{margin-top:1em}
 .prose .faq summary{font-size:1.05rem}
+
+/* Formulaires : anti-spam + erreur */
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.form-error{display:none;padding:16px;border-radius:14px;background:#FDECEC;color:#B42318;font-weight:600;margin-top:16px}
+button[disabled]{opacity:.7;cursor:wait}
