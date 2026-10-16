@@ -1281,3 +1281,20 @@ button[disabled]{opacity:.7;cursor:wait}
 [dir="rtl"] .mod h3{padding-right:0;padding-left:28px}
 @media (max-width:1080px){.mods{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.mods{grid-template-columns:1fr;padding:10px;border-radius:22px}.mod{flex-direction:row;gap:14px;padding:16px}.mod .ico{flex:none}}
+
+/* Menu mobile : bouton démo visible + sous-menus alignés (LTR & RTL) */
+@media (max-width:960px){
+  .nav .nav-mobile-cta,.nav .nav-mobile-cta:hover{background:linear-gradient(180deg,#FF8A45,#FF6A1A)!important;color:#fff!important;font-weight:600}
+  .nav .dd a{justify-content:flex-start;text-align:start}
+  .nav .dd a > span:not(.dd-ico),.nav .dd a > div{flex:1;min-width:0}
+  [dir="rtl"] .nav a,[dir="rtl"] .nav button.nav-link{text-align:right}
+}
+
+/* RTL : alignements à droite complémentaires */
+[dir="rtl"] .stat{text-align:right;border-left:0;border-right:1px solid var(--line)}
+[dir="rtl"] .stat:first-child{border-right:0}
+[dir="rtl"] .ftab,[dir="rtl"] td,[dir="rtl"] th{text-align:right}
+[dir="rtl"] .section-head--left{margin-left:auto;margin-right:0}
+[dir="rtl"] .mock *,[dir="rtl"] .invoice *{text-align:inherit}
+[dir="rtl"] .kpi,[dir="rtl"] .bk,[dir="rtl"] .mods-head{text-align:right}
+[dir="rtl"] .mods-head{text-align:center}
