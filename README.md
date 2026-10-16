@@ -9,7 +9,9 @@ Site 100 % statique : uniquement du **HTML, CSS et JavaScript**. Aucun Python, a
 - `sitemap.xml`, `robots.txt`, `llms.txt` : référencement Google et moteurs IA.
 
 ## Voir le site
-Double-cliquez sur `index.html`.
+Les adresses sont propres (sans index.html), comme sur travelife.ma : elles fonctionnent sur un serveur web.
+- En ligne : glissez le dossier sur https://app.netlify.com/drop.
+- Sur l'ordinateur : VS Code > extension « Live Server » > clic droit sur index.html > Open with Live Server.
 
 ## Modifier un texte
 Ouvrez le fichier `index.html` de la page concernée (dans chaque langue) avec un éditeur de texte (ex. VS Code ou Bloc-notes), modifiez le texte, enregistrez.
