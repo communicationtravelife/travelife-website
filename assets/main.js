@@ -1,4 +1,15 @@
 (function(){
+  // Ouverture directe du fichier (double-clic) : rend les liens propres /page/ cliquables. Sans effet une fois en ligne.
+  if(location.protocol!=='file:') return;
+  var css=document.querySelector('link[rel=stylesheet][href*="assets/style.css"]'); if(!css) return;
+  var root=css.href.replace(/assets\/style\.css.*$/,'');
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="/"]'); if(!a||a.getAttribute('href').indexOf('//')===0) return;
+    var h=a.getAttribute('href'), hash=''; var i=h.indexOf('#'); if(i>-1){hash=h.slice(i);h=h.slice(0,i);}
+    e.preventDefault(); location.href=root+h.slice(1)+(/\/$/.test(h)||h===''?'index.html':'')+hash;
+  },true);
+})();
+(function(){
   var header=document.querySelector('.site-header');
   var onScroll=function(){ if(header) header.classList.toggle('is-scrolled', window.scrollY>8); };
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
