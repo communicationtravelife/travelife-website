@@ -1323,3 +1323,81 @@ button[disabled]{opacity:.7;cursor:wait}
 .stats--icons .stat b i{font-style:normal;color:var(--orange)}
 .stats--icons .stat span:not(.stat-ico){display:block}
 @media (max-width:520px){.stats--icons .stat-ico{width:40px;height:40px;margin-bottom:14px}}
+
+/* Comparatif Travelife vs Excel */
+.vs-hero .lead{max-width:62ch}
+.vs-tldr{max-width:900px;margin:0 auto;padding:28px 32px;border-radius:var(--r-lg);background:var(--violet-50);border:1px solid var(--violet-100)}
+.vs-tldr b{display:block;font-family:var(--f-display);color:var(--violet);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+.vs-tldr p{margin:0;color:var(--text);font-size:1.05rem}
+.vs-compare{padding-top:40px}
+.vs-table-wrap{border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-1);background:#fff}
+.vs-table{width:100%;border-collapse:collapse;font-size:.95rem}
+.vs-table th,.vs-table td{padding:18px 22px;text-align:start;vertical-align:top;border-top:1px solid var(--line)}
+.vs-table thead th{border-top:0;background:var(--sand);font-family:var(--f-display);font-size:1rem;color:var(--ink)}
+.vs-table thead th.vs-t{background:var(--ink);color:#fff}
+.vs-table tbody th{font-family:var(--f-display);font-weight:600;color:var(--ink);width:22%}
+.vs-table td.vs-x{color:var(--muted);width:36%}
+.vs-table td.vs-t{background:rgba(91,63,214,.035);color:var(--text);font-weight:500}
+.vs-table td{position:relative;padding-inline-start:54px}
+.vs-mark{position:absolute;inset-inline-start:20px;top:18px;display:grid;place-items:center;width:22px;height:22px;border-radius:50%}
+.vs-mark svg{width:13px;height:13px;stroke-width:3}
+.vs-mark--x{background:#FDECEC;color:#C2272F}
+.vs-mark--ok{background:#E3F6EC;color:var(--ok)}
+.vs-brand{display:inline-flex;align-items:center;gap:8px}
+.vs-pains{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.vs-pain{background:#fff;border:1px solid var(--sand-2);border-radius:var(--r);padding:26px}
+.vs-pain-ico{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#FDECEC;color:#C2272F;margin-bottom:18px}
+.vs-pain-ico svg{width:21px;height:21px}
+.vs-pain h3{font-size:1.1rem;margin:0 0 8px}
+.vs-pain p{margin:0;color:var(--muted);font-size:.94rem}
+.vs-when{display:grid;grid-template-columns:1fr 1.25fr;gap:24px;max-width:1040px;margin:0 auto}
+.vs-when-card{border:1px solid var(--line);border-radius:var(--r-lg);padding:32px}
+.vs-when-card h3{font-size:1.25rem;margin:0 0 16px}
+.vs-when-card ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.vs-when-card li{position:relative;padding-inline-start:28px;color:var(--muted)}
+.vs-when-card li::before{content:"";position:absolute;inset-inline-start:2px;top:.55em;width:10px;height:10px;border-radius:50%;background:var(--line-2)}
+.vs-when-card--go{background:var(--ink);border-color:var(--ink)}
+.vs-when-card--go h3{color:#fff}
+.vs-when-card--go li{color:#CFC9EE}
+.vs-when-card--go li::before{background:var(--orange)}
+.vs-when-card--go .link-arrow{color:#fff;margin-top:22px}
+.vs-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.vs-steps li{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-lg);padding:28px}
+.vs-step-n{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--orange);color:#fff;font-family:var(--f-display);font-weight:700;margin-bottom:18px}
+.vs-steps h3{color:#fff;font-size:1.15rem;margin:0 0 8px}
+.vs-steps p{margin:0;color:#B9B3DA;font-size:.95rem}
+/* « À lire aussi » : cartes */
+.vs-see{max-width:1080px;margin:72px auto 0}
+.vs-see h2{font-size:clamp(1.4rem,2.2vw,1.8rem);margin:0 0 22px}
+.vs-see ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.vs-rel{display:flex;flex-direction:column;height:100%;background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;color:var(--text);box-shadow:var(--sh-1);transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s}
+.vs-rel:hover{transform:translateY(-4px);box-shadow:var(--sh-2);border-color:var(--violet-100);color:var(--text)}
+.vs-rel-img{display:block;aspect-ratio:2/1;overflow:hidden;background:var(--sand)}
+.vs-rel-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.vs-rel:hover .vs-rel-img img{transform:scale(1.04)}
+.vs-rel-body{display:flex;flex-direction:column;gap:8px;padding:20px 22px 22px;flex:1}
+.vs-rel-cat{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--violet)}
+.vs-rel b{font-family:var(--f-display);font-weight:600;font-size:1.08rem;line-height:1.3;color:var(--ink);transition:color .2s}
+.vs-rel:hover b{color:var(--violet)}
+.vs-rel-go{margin-top:auto;padding-top:8px;display:inline-flex;align-items:center;gap:6px;font-size:.9rem;font-weight:600;color:var(--ink)}
+.vs-rel-go svg{width:16px;height:16px;transition:transform .25s var(--ease)}
+.vs-rel:hover .vs-rel-go svg{transform:translateX(3px)}
+[dir="rtl"] .vs-rel-go svg,[dir="rtl"] .vs-when-card .link-arrow svg{transform:scaleX(-1)}
+[dir="rtl"] .vs-rel:hover .vs-rel-go svg{transform:scaleX(-1) translateX(3px)}
+@media (max-width:1080px){.vs-pains{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.vs-see ul{grid-template-columns:1fr}.vs-rel{flex-direction:row}.vs-rel-img{flex:0 0 38%;aspect-ratio:auto}}
+@media (max-width:480px){.vs-rel{flex-direction:column}.vs-rel-img{aspect-ratio:2/1}}
+@media (max-width:760px){
+ .vs-when,.vs-steps{grid-template-columns:1fr}
+ .vs-table thead{display:none}
+ .vs-table,.vs-table tbody,.vs-table tr,.vs-table th,.vs-table td{display:block;width:100%!important}
+ .vs-table tr{border-top:1px solid var(--line)}
+ .vs-table tr:first-child{border-top:0}
+ .vs-table tbody th{border-top:0;padding:18px 18px 6px;background:var(--sand)}
+ .vs-table td{border-top:0;padding:10px 18px 10px 50px}
+ [dir="rtl"] .vs-table td{padding:10px 50px 10px 18px}
+ .vs-mark{inset-inline-start:18px;top:10px}
+ .vs-table td.vs-t{padding-bottom:16px}
+ .vs-tldr{padding:22px}
+}
+@media (max-width:520px){.vs-pains{grid-template-columns:1fr}}
