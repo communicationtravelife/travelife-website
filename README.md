@@ -8,6 +8,14 @@ Site 100 % statique : uniquement du **HTML, CSS et JavaScript**. Aucun Python, a
 - `assets/` : `style.css` (design) et `main.js` (menu, langues, zoom des images).
 - `sitemap.xml`, `robots.txt`, `llms.txt` : référencement Google et moteurs IA.
 
+## Redirections (référencement)
+Les anciennes adresses WordPress (`/tag/…`, `/index.php/…`, `/tarifs/`, `/contact/`, pagination, flux RSS, archives par date, anciennes tailles d'images) sont redirigées en 301 vers les nouvelles pages :
+- `.htaccess` : pour l'hébergeur actuel (LiteSpeed/Apache). Fichier caché : pensez à l'envoyer avec le reste.
+- `_redirects` : pour Netlify ou Cloudflare Pages.
+- `404.html` : page affichée pour toute adresse inconnue (non indexée par Google).
+
+GitHub Pages ne lit aucun de ces fichiers : n'hébergez pas le site uniquement sur GitHub Pages.
+
 ## Voir le site
 Les adresses sont propres (sans index.html), comme sur travelife.ma : elles fonctionnent sur un serveur web.
 - En ligne : glissez le dossier sur https://app.netlify.com/drop.
