@@ -8,10 +8,10 @@
 
   var lang = (document.documentElement.lang || 'fr').slice(0,2);
   var ALL = {
-    fr:{txt:'Nous utilisons des cookies de mesure d’audience (Google Analytics) et publicitaires (Meta) pour améliorer le site. Vous pouvez les accepter ou les refuser.', more:'En savoir plus', ok:'Accepter', no:'Refuser', manage:'Gérer les cookies', wa:'Écrivez-nous sur WhatsApp', policy:'/politique-de-confidentialite/'},
-    en:{txt:'We use audience measurement (Google Analytics) and advertising (Meta) cookies to improve the site. You can accept or refuse them.', more:'Learn more', ok:'Accept', no:'Refuse', manage:'Manage cookies', wa:'Message us on WhatsApp', policy:'/en/privacy-policy/'},
-    es:{txt:'Utilizamos cookies de medición de audiencia (Google Analytics) y publicitarias (Meta) para mejorar el sitio. Puede aceptarlas o rechazarlas.', more:'Más información', ok:'Aceptar', no:'Rechazar', manage:'Gestionar cookies', wa:'Escríbanos por WhatsApp', policy:'/es/politica-de-privacidad/'},
-    ar:{txt:'نستعمل ملفات تعريف الارتباط لقياس الزيارات (Google Analytics) وللإعلانات (Meta) من أجل تحسين الموقع. يمكنكم قبولها أو رفضها.', more:'معرفة المزيد', ok:'قبول', no:'رفض', manage:'إدارة ملفات تعريف الارتباط', wa:'راسلونا عبر واتساب', policy:'/ar/privacy-policy/'}
+    fr:{txt:'Nous utilisons des cookies de mesure d’audience (Google Analytics) et publicitaires (Meta) pour améliorer le site. Vous pouvez les accepter ou les refuser.', more:'En savoir plus', ok:'Accepter', no:'Refuser', manage:'Gérer les cookies', wa:'Écrivez-nous sur WhatsApp', policy:'/politique-de-confidentialite/#cookies'},
+    en:{txt:'We use audience measurement (Google Analytics) and advertising (Meta) cookies to improve the site. You can accept or refuse them.', more:'Learn more', ok:'Accept', no:'Refuse', manage:'Manage cookies', wa:'Message us on WhatsApp', policy:'/en/privacy-policy/#cookies'},
+    es:{txt:'Utilizamos cookies de medición de audiencia (Google Analytics) y publicitarias (Meta) para mejorar el sitio. Puede aceptarlas o rechazarlas.', more:'Más información', ok:'Aceptar', no:'Rechazar', manage:'Gestionar cookies', wa:'Escríbanos por WhatsApp', policy:'/es/politica-de-privacidad/#cookies'},
+    ar:{txt:'نستعمل ملفات تعريف الارتباط لقياس الزيارات (Google Analytics) وللإعلانات (Meta) من أجل تحسين الموقع. يمكنكم قبولها أو رفضها.', more:'معرفة المزيد', ok:'قبول', no:'رفض', manage:'إدارة ملفات تعريف الارتباط', wa:'راسلونا عبر واتساب', policy:'/ar/privacy-policy/#cookies'}
   };
   var T = ALL[lang] || ALL.fr;
 
