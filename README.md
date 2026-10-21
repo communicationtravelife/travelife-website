@@ -16,6 +16,11 @@ Les anciennes adresses WordPress (`/tag/…`, `/index.php/…`, `/tarifs/`, `/co
 
 GitHub Pages ne lit aucun de ces fichiers : n'hébergez pas le site uniquement sur GitHub Pages.
 
+## Statistiques, cookies et WhatsApp
+- `assets/consent.js` (chargé sur toutes les pages) : bandeau cookies en 4 langues. Google Analytics (`G-YCP5KBSJG3`) et le Pixel Meta (`1167280197414116`) ne se chargent qu'après « Accepter ». Lien « Gérer les cookies » en bas de page.
+- Bouton WhatsApp flottant : prêt mais désactivé. Pour l'afficher, renseignez le numéro dans `WHATSAPP` en haut de `assets/consent.js`.
+- La balise de vérification Google Search Console se trouve dans `index.html`.
+
 ## Voir le site
 Les adresses sont propres (sans index.html), comme sur travelife.ma : elles fonctionnent sur un serveur web.
 - En ligne : glissez le dossier sur https://app.netlify.com/drop.
