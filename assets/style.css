@@ -1422,3 +1422,21 @@ button[disabled]{opacity:.7;cursor:wait}
 body.has-ck .wa-float{bottom:110px}
 @media (max-width:640px){.wa-float{right:14px;bottom:14px;width:52px;height:52px}[dir="rtl"] .wa-float{left:14px}body.has-ck .wa-float{bottom:200px}}
 @media print{.ck,.wa-float{display:none}}
+
+/* Page Travelife HUB */
+.hub-links{grid-template-columns:repeat(5,1fr)}
+.hub-link{display:flex;flex-direction:column;color:var(--text);transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .25s}
+.hub-link:hover{transform:translateY(-3px);box-shadow:var(--sh-2);border-color:var(--violet-100);color:var(--text)}
+.hub-ico{background:var(--violet-50);color:var(--violet)}
+.hub-link:nth-child(even) .hub-ico{background:var(--orange-50);color:var(--orange)}
+.hub-link .link-arrow{margin-top:auto;padding-top:14px;color:var(--violet)}
+.hub-link .link-arrow svg{width:18px;height:18px}
+.hub-st--1 .vs-step-n{background:var(--ok)}
+.hub-st--2 .vs-step-n{background:var(--violet-2)}
+.hub-ai{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.hub-ex{margin:0}
+.hub-ex small{display:block;margin-top:12px;color:var(--muted);font-size:.85rem}
+[dir="rtl"] .hub-link .link-arrow svg{transform:scaleX(-1)}
+@media (max-width:1180px){.hub-links{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:860px){.hub-links{grid-template-columns:1fr 1fr}.hub-ai{grid-template-columns:1fr;gap:28px}}
+@media (max-width:520px){.hub-links{grid-template-columns:1fr}}
