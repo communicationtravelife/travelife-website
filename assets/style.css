@@ -1503,3 +1503,26 @@ url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2
 @media(max-width:1200px){.mods{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:760px){.mods{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
 @media(max-width:520px){.mods{grid-template-columns:1fr;padding:0;border-radius:0}.mod{flex-direction:row;padding:16px}}
+/* Modules — design créatif « bento coloré » */
+.mods{counter-reset:md;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}
+.mod{counter-increment:md;grid-column:span 2;min-height:190px;padding:24px;border-radius:24px;justify-content:flex-start;transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.mod::before{display:none}
+.mod::after{display:block;content:counter(md,decimal-leading-zero);position:absolute;right:18px;bottom:-14px;font:800 5rem/1 var(--f-display);letter-spacing:-.04em;color:var(--violet);opacity:.07;pointer-events:none}
+.mod > div{position:relative;z-index:1}
+.mod h3{font-size:1.05rem}
+.mod p{font-size:.86rem}
+.mod:nth-child(1),.mod:nth-child(2),.mod:nth-child(14),.mod:nth-child(15){grid-column:span 3}
+.mod:nth-child(10){grid-column:span 4}
+.mod:nth-child(1),.mod:nth-child(10),.mod:nth-child(2),.mod:nth-child(15){border:0;box-shadow:var(--sh-2)}
+.mod:nth-child(1){background:linear-gradient(150deg,#7A5CFF,#3F27B0)}
+.mod:nth-child(10){background:linear-gradient(150deg,#FF8A45,#E5560F)}
+.mod:nth-child(2),.mod:nth-child(15){background:linear-gradient(150deg,#1A1445,#0E0B24)}
+.mod:nth-child(1) h3,.mod:nth-child(10) h3,.mod:nth-child(2) h3,.mod:nth-child(15) h3{color:#fff;font-size:1.25rem}
+.mod:nth-child(1) p,.mod:nth-child(10) p,.mod:nth-child(2) p,.mod:nth-child(15) p{color:rgba(255,255,255,.82);font-size:.92rem}
+.mod:nth-child(1) .ico,.mod:nth-child(10) .ico,.mod:nth-child(2) .ico,.mod:nth-child(15) .ico{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.28);color:#fff}
+.mod:nth-child(1)::after,.mod:nth-child(10)::after,.mod:nth-child(2)::after,.mod:nth-child(15)::after{color:#fff;opacity:.14;font-size:7rem;bottom:-24px}
+.mod:nth-child(3n+4):not(:nth-child(10)):not(:nth-child(14)){background:linear-gradient(180deg,#fff,var(--violet-50))}
+.mod:hover{transform:translateY(-6px) rotate(-.4deg);box-shadow:var(--sh-3)}
+[dir="rtl"] .mod::after{right:auto;left:18px}
+@media(max-width:1000px){.mods{grid-template-columns:repeat(2,minmax(0,1fr))}.mod,.mod:nth-child(n){grid-column:span 1}.mod:nth-child(1),.mod:nth-child(10),.mod:nth-child(15){grid-column:span 2}}
+@media(max-width:560px){.mods{grid-template-columns:1fr}.mod,.mod:nth-child(n){grid-column:auto!important;min-height:0;flex-direction:row}}
