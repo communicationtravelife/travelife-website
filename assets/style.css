@@ -6,7 +6,7 @@
   --ink:#0E0B24; --ink-2:#17133A; --ink-3:#221D52;
   --violet:#5B3FD6; --violet-2:#7A5CFF; --violet-3:#A996FF; --violet-50:#F3F0FF; --violet-100:#E6E0FF;
   --orange:#FF7A2F; --orange-2:#FF9A55; --orange-50:#FFF2E8;
-  --sand:#F7F2EA; --sand-2:#EFE6D8;
+  --sand:#F5F5F7; --sand-2:#E6E6EB;
   --text:#2B2843; --muted:#6E6A86; --line:#E9E5F2; --line-2:#D9D3EA;
   --white:#fff; --ok:#16A36A;
   --r-xs:8px; --r-sm:12px; --r:18px; --r-lg:26px; --r-xl:36px;
@@ -1526,3 +1526,32 @@ url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2
 [dir="rtl"] .mod::after{right:auto;left:18px}
 @media(max-width:1000px){.mods{grid-template-columns:repeat(2,minmax(0,1fr))}.mod,.mod:nth-child(n){grid-column:span 1}.mod:nth-child(1),.mod:nth-child(10),.mod:nth-child(15){grid-column:span 2}}
 @media(max-width:560px){.mods{grid-template-columns:1fr}.mod,.mod:nth-child(n){grid-column:auto!important;min-height:0;flex-direction:row}}
+/* Travelife HUB — bandeau compact */
+.siyaha{padding:26px 40px;gap:32px;border-radius:24px;background:linear-gradient(135deg,var(--violet-50),#fff);border-color:var(--violet-100)}
+.siyaha .big{font-size:clamp(3rem,5vw,4.2rem)}
+.siyaha h2{font-size:clamp(1.2rem,2vw,1.55rem);margin-bottom:6px;line-height:1.25}
+.siyaha p{font-size:.92rem;line-height:1.55;color:var(--muted)}
+.siyaha .eyebrow{margin-bottom:10px;padding:5px 12px}
+@media(max-width:960px){.siyaha{padding:24px}}
+@media(max-width:640px){.siyaha{padding:22px 20px;gap:14px}}
+/* Pourquoi Travelife — refonte */
+.section:has(.float-card--a){padding:64px 0}
+.section:has(.float-card--a) .split{grid-template-columns:.9fr 1.1fr;gap:56px}
+.section:has(.float-card--a) .media{border:0;border-radius:28px;box-shadow:var(--sh-2);transform:rotate(-1.5deg)}
+.section:has(.float-card--a) .media--photo img{aspect-ratio:5/4}
+.section:has(.float-card--a) h2{font-size:clamp(1.7rem,2.8vw,2.3rem);margin-bottom:12px}
+.section:has(.float-card--a) h3{font-size:1.05rem!important;margin-bottom:10px}
+.section:has(.float-card--a) .lead{font-size:1rem;line-height:1.65;margin-bottom:18px}
+.section:has(.float-card--a) .checklist--2col{gap:10px;margin-bottom:22px}
+.section:has(.float-card--a) .checklist--2col li{margin:0;padding:12px 14px 12px 46px;background:#fff;border:1px solid var(--line);border-radius:14px;font-weight:500;font-size:.92rem;color:var(--ink)}
+.section:has(.float-card--a) .checklist--2col li::before{left:14px;top:12px}
+[dir="rtl"] .section:has(.float-card--a) .checklist--2col li{padding:12px 46px 12px 14px}
+[dir="rtl"] .section:has(.float-card--a) .checklist--2col li::before{left:auto;right:14px}
+@media(max-width:960px){.section:has(.float-card--a) .split{grid-template-columns:1fr;gap:36px}.section:has(.float-card--a) .media{transform:none}}
+@media(max-width:520px){.section:has(.float-card--a) .checklist--2col{grid-template-columns:1fr}}
+/* CTA final — légèrement réduit */
+.cta-band{padding:60px 64px}
+.cta-band h2{font-size:clamp(1.8rem,3.1vw,2.5rem)}
+.cta-band p{font-size:1.02rem}
+@media(max-width:960px){.cta-band{padding:48px 36px}}
+@media(max-width:640px){.cta-band{padding:38px 22px}}
