@@ -1623,3 +1623,23 @@ url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2
 [dir="rtl"] .mods + p .link-arrow svg{transform:scaleX(-1)}
 [dir="rtl"] .mods + p .link-arrow:hover svg{transform:scaleX(-1) translateX(3px)}
 @media(max-width:560px){.mods + p .link-arrow{font-size:.86rem;padding-left:16px}}
+/* Agent IA — maquette paiement WhatsApp */
+.aia-pay{display:grid;grid-template-columns:1.35fr 1fr;gap:0;background:#fff;padding:0;direction:ltr}
+.ap-chat{position:relative;padding:20px;background:#ECE5DD;display:flex;flex-direction:column;gap:12px;min-height:300px}
+.ap-file{display:flex;align-items:center;gap:12px;align-self:flex-start;max-width:90%;padding:10px 12px;border-radius:12px 12px 12px 3px;background:#fff;box-shadow:0 1px 1px rgba(0,0,0,.08);position:relative}
+.ap-pdf{flex:none;display:grid;place-items:center;width:40px;height:46px;border-radius:8px;background:#E8F0FE;color:#1A73E8;font:700 .68rem var(--f-display)}
+.ap-file b{display:block;font-size:.88rem;color:var(--ink);font-weight:600;overflow-wrap:anywhere}
+.ap-file small{display:block;font-size:.72rem;color:var(--muted)}
+.ap-file time,.ap-msg time{font-size:.66rem;color:#7a8a80;align-self:flex-end}
+.ap-file time{margin-left:8px;align-self:flex-end}
+.ap-msg{align-self:flex-end;max-width:88%;padding:10px 12px 6px;border-radius:12px 12px 3px 12px;background:#DCF8C6;box-shadow:0 1px 1px rgba(0,0,0,.08);font-size:.88rem;line-height:1.45;color:#1f2a24;display:flex;flex-direction:column;direction:ltr}
+.ap-msg time{margin-top:2px;color:#4F9A5F}
+.ap-in{margin-top:auto;display:flex;align-items:center;gap:10px}
+.ap-in span{flex:1;padding:10px 16px;border-radius:999px;background:#fff;color:#8a8f98;font-size:.82rem}
+.ap-in i{flex:none;width:38px;height:38px;border-radius:50%;background:#1FA855 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='3' width='6' height='11' rx='3'/%3E%3Cpath d='M5 11a7 7 0 0 0 14 0M12 18v3'/%3E%3C/svg%3E") center/20px no-repeat}
+.ap-list{list-style:none;margin:0;padding:18px 18px;display:flex;flex-direction:column;justify-content:center;gap:14px;background:#fff}
+.ap-list li{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.9rem;color:var(--ink);line-height:1.3;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.ap-list li:last-child{border:0;padding-bottom:0}
+.ap-list li::before{content:"";flex:none;width:26px;height:26px;border-radius:50%;background:#1FA855 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/14px no-repeat}
+[dir="rtl"] .ap-list{direction:rtl}
+@media(max-width:640px){.aia-pay{grid-template-columns:1fr}.ap-list{padding:16px}}
