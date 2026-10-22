@@ -1476,3 +1476,14 @@ url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2
 #video .photo-band p{font-size:1rem;margin-bottom:22px}
 #video .photo-band .eyebrow{margin-bottom:14px}
 @media(max-width:700px){#video .photo-band .inner{padding:30px 24px}}
+/* L'essentiel — version réduite */
+.tldr{grid-template-columns:170px 1fr;border-radius:18px}
+.tldr h2{padding:16px 18px;font-size:1.15rem;gap:6px}
+.tldr h2::before{width:24px;height:3px}
+.tldr h2 small{font-size:.74rem;line-height:1.35}
+.tldr li{padding:12px 14px 12px 46px;font-size:.8rem;line-height:1.45}
+.tldr li::before{left:12px;top:12px;width:22px;height:22px;border-radius:7px;font-size:.66rem}
+.tldr li b,.tldr li strong{font-size:.68rem;margin:1px 0 2px}
+[dir="rtl"] .tldr li{padding:12px 46px 12px 14px}
+[dir="rtl"] .tldr li::before{right:12px}
+@media(max-width:1080px){.tldr{grid-template-columns:1fr}.tldr h2{padding:14px 18px}}
