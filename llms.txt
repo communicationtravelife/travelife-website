@@ -13,25 +13,25 @@
 - Langues du site : français, anglais, arabe, espagnol.
 
 ## Pages principales (FR)
-- [Accueil](https://travelife.ma/) : présentation de la plateforme.
-- [Logiciel de gestion commerciale](https://travelife.ma/logiciel-de-gestion-commerciale/) : ERP pour agences de voyages.
-- [Travelife Manage](https://travelife.ma/manage-travelife/) : parcours opérationnel de l'agent en 9 étapes.
-- [Système de réservation B2B](https://travelife.ma/systeme-de-reservation-b2b/)
-- [Site internet pour agence de voyages](https://travelife.ma/site-internet-pour-agence-de-voyages/) et [site web B2C](https://travelife.ma/site-web-pour-agence-de-voyages/)
-- [Agent IA & SmartCRM](https://travelife.ma/agent-ia-travelife-smartcrm/)
-- [Travelife Omra](https://travelife.ma/travelife-omra/)
-- [Tarifs du logiciel](https://travelife.ma/tarifs-logiciel-travelife/) et [tarifs des sites web](https://travelife.ma/creation-site-web-agence-de-voyage/)
-- [TVA sur marge pour agence de voyage](https://travelife.ma/logiciel-tva-sur-marge-agence-de-voyage/) : calcul et facturation de la TVA sur marge.
-- [Logiciel agence de voyage ou Excel : le comparatif](https://travelife.ma/logiciel-agence-de-voyage-vs-excel/) : comparaison point par point (TVA sur marge, GDS, comptabilité, coût).
-- [Accompagnement des agences](https://travelife.ma/accompagnement-agence-de-voyage/) : audit, mise en place, formation, support.
-- [À propos de Travelife](https://travelife.ma/a-propos/) et [Glossaire de l'agence de voyage](https://travelife.ma/glossaire-agence-de-voyage/) (49 définitions).
-- [Clients](https://travelife.ma/nos-clients/), [Partenaires](https://travelife.ma/nos-partenaires/), [Contact](https://travelife.ma/contactez/), [Blog](https://travelife.ma/articles/) (48 articles)
+- [Accueil](https://travelife.io/) : présentation de la plateforme.
+- [Logiciel de gestion commerciale](https://travelife.io/logiciel-de-gestion-commerciale/) : ERP pour agences de voyages.
+- [Travelife Manage](https://travelife.io/manage-travelife/) : parcours opérationnel de l'agent en 9 étapes.
+- [Système de réservation B2B](https://travelife.io/systeme-de-reservation-b2b/)
+- [Site internet pour agence de voyages](https://travelife.io/site-internet-pour-agence-de-voyages/) et [site web B2C](https://travelife.io/site-web-pour-agence-de-voyages/)
+- [Agent IA & SmartCRM](https://travelife.io/agent-ia-travelife-smartcrm/)
+- [Travelife Omra](https://travelife.io/travelife-omra/)
+- [Tarifs du logiciel](https://travelife.io/tarifs-logiciel-travelife/) et [tarifs des sites web](https://travelife.io/creation-site-web-agence-de-voyage/)
+- [TVA sur marge pour agence de voyage](https://travelife.io/logiciel-tva-sur-marge-agence-de-voyage/) : calcul et facturation de la TVA sur marge.
+- [Logiciel agence de voyage ou Excel : le comparatif](https://travelife.io/logiciel-agence-de-voyage-vs-excel/) : comparaison point par point (TVA sur marge, GDS, comptabilité, coût).
+- [Accompagnement des agences](https://travelife.io/accompagnement-agence-de-voyage/) : audit, mise en place, formation, support.
+- [À propos de Travelife](https://travelife.io/a-propos/) et [Glossaire de l'agence de voyage](https://travelife.io/glossaire-agence-de-voyage/) (49 définitions).
+- [Clients](https://travelife.io/nos-clients/), [Partenaires](https://travelife.io/nos-partenaires/), [Contact](https://travelife.io/contactez/), [Blog](https://travelife.io/articles/) (48 articles)
 
 ## Main pages (EN)
-- [Home](https://travelife.ma/en/), [Travel agency software](https://travelife.ma/en/travel-agency-software/), [B2B booking system](https://travelife.ma/en/b2b-booking-system/), [Travel agency website](https://travelife.ma/en/travel-agency-website/), [AI Agent & SmartCRM](https://travelife.ma/en/ai-agent-smartcrm/), [Umrah & Hajj software](https://travelife.ma/en/umrah-hajj-software/), [VAT on margin software](https://travelife.ma/en/vat-on-margin-software/), [Travel agency software vs Excel](https://travelife.ma/en/travel-agency-software-vs-excel/), [Consulting & support](https://travelife.ma/en/travel-agency-consulting-support/), [About us](https://travelife.ma/en/about-us/), [Travel agency glossary](https://travelife.ma/en/travel-agency-glossary/), [Pricing](https://travelife.ma/en/pricing/), [Blog](https://travelife.ma/en/blog/), [Contact](https://travelife.ma/en/contact/)
+- [Home](https://travelife.io/en/), [Travel agency software](https://travelife.io/en/travel-agency-software/), [B2B booking system](https://travelife.io/en/b2b-booking-system/), [Travel agency website](https://travelife.io/en/travel-agency-website/), [AI Agent & SmartCRM](https://travelife.io/en/ai-agent-smartcrm/), [Umrah & Hajj software](https://travelife.io/en/umrah-hajj-software/), [VAT on margin software](https://travelife.io/en/vat-on-margin-software/), [Travel agency software vs Excel](https://travelife.io/en/travel-agency-software-vs-excel/), [Consulting & support](https://travelife.io/en/travel-agency-consulting-support/), [About us](https://travelife.io/en/about-us/), [Travel agency glossary](https://travelife.io/en/travel-agency-glossary/), [Pricing](https://travelife.io/en/pricing/), [Blog](https://travelife.io/en/blog/), [Contact](https://travelife.io/en/contact/)
 
 ## Páginas principales (ES)
-- [Inicio](https://travelife.ma/es/), [Software para agencias de viajes](https://travelife.ma/es/software-agencia-de-viajes/), [Sistema de reservas B2B](https://travelife.ma/es/sistema-de-reservas-b2b/), [Software IVA sobre margen](https://travelife.ma/es/software-iva-sobre-margen/), [Software para agencias vs Excel](https://travelife.ma/es/software-agencia-de-viajes-vs-excel/), [Acompañamiento](https://travelife.ma/es/acompanamiento-agencias-de-viajes/), [Sobre nosotros](https://travelife.ma/es/sobre-nosotros/), [Glosario](https://travelife.ma/es/glosario-agencia-de-viajes/), [Precios](https://travelife.ma/es/precios/), [Blog](https://travelife.ma/es/blog/), [Contacto](https://travelife.ma/es/contacto/)
+- [Inicio](https://travelife.io/es/), [Software para agencias de viajes](https://travelife.io/es/software-agencia-de-viajes/), [Sistema de reservas B2B](https://travelife.io/es/sistema-de-reservas-b2b/), [Software IVA sobre margen](https://travelife.io/es/software-iva-sobre-margen/), [Software para agencias vs Excel](https://travelife.io/es/software-agencia-de-viajes-vs-excel/), [Acompañamiento](https://travelife.io/es/acompanamiento-agencias-de-viajes/), [Sobre nosotros](https://travelife.io/es/sobre-nosotros/), [Glosario](https://travelife.io/es/glosario-agencia-de-viajes/), [Precios](https://travelife.io/es/precios/), [Blog](https://travelife.io/es/blog/), [Contacto](https://travelife.io/es/contacto/)
 
 ## الصفحات الرئيسية (AR)
-- [الرئيسية](https://travelife.ma/ar/)، [برنامج إدارة وكالات الأسفار](https://travelife.ma/ar/travel-agency-software/)، [برنامج العمرة والحج](https://travelife.ma/ar/umrah-hajj-software/)، [الضريبة على القيمة المضافة على الهامش](https://travelife.ma/ar/vat-on-margin-software/)، [برنامج وكالة الأسفار مقابل Excel](https://travelife.ma/ar/travel-agency-software-vs-excel/)، [المواكبة](https://travelife.ma/ar/travel-agency-consulting-support/)، [من نحن](https://travelife.ma/ar/about-us/)، [معجم وكالات الأسفار](https://travelife.ma/ar/travel-agency-glossary/)، [الأسعار](https://travelife.ma/ar/pricing/)، [المدونة](https://travelife.ma/ar/blog/)، [اتصل بنا](https://travelife.ma/ar/contact/)
+- [الرئيسية](https://travelife.io/ar/)، [برنامج إدارة وكالات الأسفار](https://travelife.io/ar/travel-agency-software/)، [برنامج العمرة والحج](https://travelife.io/ar/umrah-hajj-software/)، [الضريبة على القيمة المضافة على الهامش](https://travelife.io/ar/vat-on-margin-software/)، [برنامج وكالة الأسفار مقابل Excel](https://travelife.io/ar/travel-agency-software-vs-excel/)، [المواكبة](https://travelife.io/ar/travel-agency-consulting-support/)، [من نحن](https://travelife.io/ar/about-us/)، [معجم وكالات الأسفار](https://travelife.io/ar/travel-agency-glossary/)، [الأسعار](https://travelife.io/ar/pricing/)، [المدونة](https://travelife.io/ar/blog/)، [اتصل بنا](https://travelife.io/ar/contact/)

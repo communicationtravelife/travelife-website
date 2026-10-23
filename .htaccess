@@ -6,10 +6,14 @@ Options -Indexes
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
-# Forcer https et sans www
+# Ancien domaine .ma -> .io : redirection permanente (301), page par page (conserve le référencement)
+RewriteCond %{HTTP_HOST} ^(www\.)?travelife\.ma$ [NC]
+RewriteRule ^(.*)$ https://travelife.io/$1 [R=301,L]
+
+# Forcer https et sans www sur travelife.io
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
-RewriteRule ^(.*)$ https://travelife.ma/$1 [R=301,L]
+RewriteRule ^(.*)$ https://travelife.io/$1 [R=301,L]
 
 # /page/index.html -> /page/ (une seule adresse par page)
 RewriteCond %{THE_REQUEST} \s/+(.*?)index\.html[\s?] [NC]

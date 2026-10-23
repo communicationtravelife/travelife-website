@@ -26,4 +26,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://travelife.ma/sitemap.xml
+Sitemap: https://travelife.io/sitemap.xml

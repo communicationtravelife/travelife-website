@@ -1,4 +1,4 @@
-# Site web Travelife (travelife.ma)
+# Site web Travelife (travelife.io)
 
 Site 100 % statique : uniquement du **HTML, CSS et JavaScript**. Aucun Python, aucune installation, aucun outil à lancer.
 
@@ -22,7 +22,7 @@ GitHub Pages ne lit aucun de ces fichiers : n'hébergez pas le site uniquement s
 - La balise de vérification Google Search Console se trouve dans `index.html`.
 
 ## Voir le site
-Les adresses sont propres (sans index.html), comme sur travelife.ma : elles fonctionnent sur un serveur web.
+Les adresses sont propres (sans index.html), comme sur travelife.io : elles fonctionnent sur un serveur web.
 - En ligne : glissez le dossier sur https://app.netlify.com/drop.
 - Sur l'ordinateur : VS Code > extension « Live Server » > clic droit sur index.html > Open with Live Server.
 
