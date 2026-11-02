@@ -66,21 +66,30 @@
     es:{sending:'Enviando…', error:'No se pudo enviar. Inténtelo de nuevo o escríbanos a contact@travelife.ma.'},
     ar:{sending:'جارٍ الإرسال…', error:'تعذّر الإرسال. يرجى المحاولة مرة أخرى أو مراسلتنا على contact@travelife.ma.'}
   };
+  var PAGE_T0=Date.now();
   document.querySelectorAll('form[data-demo]').forEach(function(f){
+    var sending=false;
     f.addEventListener('submit',function(e){
       e.preventDefault();
+      if(sending) return; // anti double envoi (double clic)
       var lang=(document.documentElement.lang||'fr').slice(0,2), m=FORM_MSG[lang]||FORM_MSG.fr;
       var ok=f.querySelector('.form-success'), err=f.querySelector('.form-error'), btn=f.querySelector('[type=submit]');
       if(err) err.style.display='none';
       var data=new URLSearchParams(new FormData(f));
       if(data.get('website')){ if(ok) ok.style.display='block'; f.reset(); return; } // robot
+      if(Date.now()-PAGE_T0<3000){ if(ok) ok.style.display='block'; f.reset(); return; } // robot : formulaire rempli en moins de 3 s
+      // Même e-mail + même formulaire déjà envoyé il y a moins de 10 min : on n'envoie pas deux fois
+      var dupKey='tl_sent_'+(f.getAttribute('data-form')||'')+'_'+(data.get('AdresseEmail')||'').toLowerCase().trim();
+      try{ var last=+localStorage.getItem(dupKey)||0; if(last && Date.now()-last<600000){ if(ok) ok.style.display='block'; f.reset(); return; } }catch(x){}
       data.append('Formulaire', f.getAttribute('data-form')||document.title);
       data.append('Langue', lang.toUpperCase());
       data.append('Page', location.href);
-      var done=function(){ if(ok) ok.style.display='block'; f.reset(); if(btn){btn.disabled=false; btn.innerHTML=btn.dataset.label;} };
+      var done=function(){ sending=false; try{ localStorage.setItem(dupKey,String(Date.now())); }catch(x){} if(ok) ok.style.display='block'; f.reset(); if(btn){btn.disabled=false; btn.innerHTML=btn.dataset.label;} };
       if(!FORM_ENDPOINT){ done(); return; }
+      sending=true;
       if(btn){ btn.dataset.label=btn.innerHTML; btn.disabled=true; btn.textContent=m.sending; }
       fetch(FORM_ENDPOINT,{method:'POST',mode:'no-cors',body:data}).then(done).catch(function(){
+        sending=false;
         if(btn){btn.disabled=false; btn.innerHTML=btn.dataset.label;}
         if(!err){ err=document.createElement('div'); err.className='form-error'; err.setAttribute('role','alert'); (ok||f.lastElementChild).insertAdjacentElement('afterend',err); }
         err.textContent=m.error; err.style.display='block';
